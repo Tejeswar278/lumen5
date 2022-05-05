@@ -1,6 +1,7 @@
 .container {
     width: 90%;
     margin: auto;
+    text-align: center;
 }
 
 .section1 {
@@ -164,3 +165,58 @@ video:hover {
     width: 300px;
 }
 
+.cards {
+    justify-content: space-around;
+}
+
+.innercard {
+    justify-content: space-around;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-50 {
+    width: 60%;
+}
+
+.card-imgs {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.text-l {
+    text-align: left;
+}
+
+.text-r {
+    text-align: right;
+}
+
+.link {
+    color: blue;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.p-l {
+    padding-left: 12px;
+}
+
+.heading9 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.section10 {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+}

@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import "./Home.css"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import Footer from "./Footer";
 
 
 
 
 export default function Home(){
+
     // VIDEO COMPONENT FOR RE-RENDERING
     const Video = ({url}) => {
         return (
@@ -27,6 +29,24 @@ export default function Home(){
             <img className="back-img" src={url}/>
         )
     }
+
+    const Cards = [
+        {
+            cimg: "https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg",
+            description: "Video Marketing: How to Get Started [Step by Step]",
+
+        },
+        {
+            cimg: "https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg",
+            description: "How to Increase Your Facebook Video Views [Complete Guide]",
+            
+        },
+        {
+            cimg: "https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg",
+            description: "The Importance of Video in Your Content Strategy",
+            
+        }
+    ]
 
     //SLIDING IMAGES DATA
     const slideImages = [
@@ -268,7 +288,7 @@ export default function Home(){
             </section>
 
             {/* SECTION 7 */}
-            <section>
+            <section className="m-b">
                 <h1 className="text-c">Explore video make with lumen5</h1>
                 <div className="sec8-btns d-flex">
                     <button id="contentmarket" value="contentmarketing" onClick={() => {handleChange("contentmarketvideos")}}>ContentMarketing</button>
@@ -289,7 +309,7 @@ export default function Home(){
             </section>
             
             {/* SECTION 8 */}
-            <section className="section7">
+            <section className="section7 m-b">
                     <h1>Customer sucess stories</h1>
                     <div>Discover how leading brands are getting results with Lumen5.</div>
                     <div className="slide-container">
@@ -310,6 +330,51 @@ export default function Home(){
                     </Slide>
                     </div>
             </section>
+
+            {/* SECTION 9 */}
+            <section className="section9 border width m-b">
+                <div className="heading9">
+                Tips and tricks for amplifying<br/>your brand with video
+                </div>
+                <div className="cards d-flex border width">
+                    
+                    <div className="innercard d-flex border w-50">
+                        <div className="card1 border w-30">
+                            <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg" alt="card"/>
+                            <div className="text-l p-l m-b">BLOG</div>
+                            <div className="text-l p-l m-b">Video Marketing: How to Get Started [Step by Step]</div>
+                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                            
+                        </div>
+                        <div className="card2 border w-30">
+                        <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="card"/>
+                            <div className="text-l p-l m-b">BLOG</div>
+                            <div className="text-l p-l m-b">How to Increase Your Facebook Video Views [Complete Guide]</div>
+                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                        <div className="card3 border w-30">
+                        <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="card"/>
+                            <div className="text-l p-l m-b">BLOG</div>
+                            <div className="text-l p-l m-b">The Importance of Video in Your Content Strategy</div>
+                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 10 */}
+            <section className="border width">
+                <div className="section10 border">
+                    <div>
+                    Join 800,000+ companies that are <br/>using Lumen5 to tell their stories.
+                    </div>
+                    <div>
+                    Lumen5 is a video creation software that helps marketers, <br/>publishers, and brands create video content in a breeze, <br/>without any technical expertise.
+                    </div>
+                    <div><button><Link to="/signup">Sign up</Link></button></div>
+                </div>
+            </section>
         </div>
+       
     )
 }
