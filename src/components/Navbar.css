@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    border: 1px solid red;
+    height: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-icon {
+    width: 20%;
+}
+
+.lumen-icon {
+    height: 100%;
+    width: fit-content;
+}
+
+.nav-items {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-items > div {
+    padding-right: 45px;
+}
