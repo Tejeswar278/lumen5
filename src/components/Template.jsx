@@ -1,4 +1,4 @@
-import { React, useState   } from "react"
+import { React, useState } from "react"
 import "./Template.css"
 import Modern_data from "./Data/Modern_data"
 import Proff from "./Data/proff"
@@ -8,16 +8,11 @@ import Rounded from "./Data/rounded"
 import Gradients from "./Data/Gradients"
 import Basic from "./Data/basic"
 import { Button,Show_Button } from "./Button"
-import VideoPlayer from "react-video-js-player"
-import Video from "./videos/Tracer_Preview_4a.m4v"
 
 
-const Left_Div_Compo = ["Modern","Professional","Dynamic","Geometric","Rounded","Gradients","Basic"];
+const Left_Div_Compo = ["Recent templates","Modern","Professional","Dynamic","Geometric","Rounded","Gradients","Basic"];
 
 export const Template = () => {
-
-     const videoSrc = Video;
-     const poster = "https://storage.googleapis.com/lumen5-prod-lottie/Tracer/Preview/Tracer_Thumbnail_4a.png"
 
      const [items] = useState(Modern_data);
      const [temps] = useState(Proff)
@@ -28,7 +23,6 @@ export const Template = () => {
      const [basic] = useState(Basic)
 
      return(
-          
           <div className="container">
                <div className="bgcolor">
                     <div className="component-div">
@@ -185,6 +179,7 @@ export const Template = () => {
                                    }  
                               </div>  
                               <div className="btn-div">
+                              <Show_Button>Show all </Show_Button>
                               </div>             
                          </div>
                     </div>
@@ -192,4 +187,3 @@ export const Template = () => {
           </div>
      )
 }
-    
