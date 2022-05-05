@@ -8,7 +8,7 @@ import 'react-slideshow-image/dist/styles.css'
 
 
 export default function Home(){
-
+    // VIDEO COMPONENT FOR RE-RENDERING
     const Video = ({url}) => {
         return (
             <video
@@ -21,12 +21,14 @@ export default function Home(){
         )
     }
 
+    // IMAGE COMPONENT FOR RE-RENDERING
     const Image = ({url}) => {
         return (
             <img className="back-img" src={url}/>
         )
     }
 
+    //SLIDING IMAGES DATA
     const slideImages = [
         {
           url: 'https://storage.googleapis.com/lumen5-site-images/carousel-siemens-bg.png',
@@ -152,11 +154,9 @@ export default function Home(){
         setValue(value);
     }
     
-
-    // const vidref = useRef(null)
     return (
         <div className="container">
-
+            {/* SECTION 1 */}
             <section className="section1 m-tb">
                 <div>
                     <p className="sec1-p1">Video maker built to <br/>supercharge your <br/>current strategy</p>
@@ -168,6 +168,7 @@ export default function Home(){
                 </div>
             </section>
 
+            {/* SECTION 2 */}
             <section className="section2 m-b">
                 <div className="text-c">Over 6 million videos created by thousands of businesses</div>
                 <div className="sec2-d2">
@@ -182,6 +183,8 @@ export default function Home(){
                     
                 </div>
             </section>
+
+            {/* SECTION 3 */}
             <section className="section3 m-b">
                 <div className="text-c">Captivating video templates</div>
                 <div className="text-c m-b">Drag and drop. No experience required.</div>
@@ -193,6 +196,7 @@ export default function Home(){
                 </div>
             </section>
 
+            {/* SECTION 4 */}
             <section className="section4 m-b">
                 <div>
                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="sec4-img"/>
@@ -216,6 +220,7 @@ export default function Home(){
                 </div>
             </section>
 
+            {/* SECTION 5 */}
             <section className="section4 border m-b">
                 <div>
                     <div className="fa-solid fa-image "></div>
@@ -239,6 +244,7 @@ export default function Home(){
                 </div>
             </section>
 
+            {/* SECTION 6 */}
             <section className="section4 m-b">
                 <div>
                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-customize.png" alt="sec6-img"/>
@@ -261,6 +267,7 @@ export default function Home(){
                 </div>
             </section>
 
+            {/* SECTION 7 */}
             <section>
                 <h1 className="text-c">Explore video make with lumen5</h1>
                 <div className="sec8-btns d-flex">
@@ -280,7 +287,8 @@ export default function Home(){
                 </div>
                
             </section>
-
+            
+            {/* SECTION 8 */}
             <section className="section7">
                     <h1>Customer sucess stories</h1>
                     <div>Discover how leading brands are getting results with Lumen5.</div>
