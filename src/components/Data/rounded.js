@@ -1,0 +1,46 @@
+const Rounded  = [
+     {
+          id:"1",
+          image:"https://storage.googleapis.com/lumen5-site-images/prev_eclipse_landscape.png",
+          name:"Eclipse",
+          button:"PREVIEW"
+     },
+     {
+          id:"2",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Billow/Preview/Billow_thumbnailver4.png",
+          name:"Billow",
+          button:"PREVIEW"
+     },
+     {
+          id:"3",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Orbit/Previews/Preview_Orbit_Land_v2c.png",
+          name:"Orbit",
+          button:"PREVIEW"
+     },
+     {
+          id:"4",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Circuit/Preview/Circuit_thumbnail_2.png",
+          name:"Circuit",
+          button:"PREVIEW"
+     },
+     {
+          id:"5",
+          image:"https://storage.googleapis.com/lumen5-site-images/Preview_Focus.png",
+          name:"Focus",
+          button:"PREVIEW"
+     },
+     {
+          id:"6",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Brilliant_v2.png",
+          name:"Brilliant",
+          button:"PREVIEW"
+     },
+     {
+          id:"7",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Circle_text_box.png",
+          name:"Lively",
+          button:"PREVIEW"
+     }
+]
+
+export default Rounded

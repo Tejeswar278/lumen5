@@ -1,0 +1,51 @@
+const Proff = [
+     {
+          id:"1",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Magnifique/Preview/magnifique_Landscape_Preview.png",
+          name:"Magnifique",
+          button:"PREVIEW"
+     },
+     {
+          id:"2",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Unity_landscape.png",
+          name:"Unity",
+          button:"PREVIEW"
+     },
+     {
+          id:"3",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Vault/Preview/Vault_Preview_Landscape.png",
+          name:"Vault",
+          button:"PREVIEW"
+     },
+     {
+          id:"4",
+          image:"https://storage.googleapis.com/lumen5-site-images/Notice_PreviewV2.png",
+          name:"Notice",
+          button:"PREVIEW"
+     },
+     {
+          id:"5",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png",
+          name:"Origin",
+          button:"PREVIEW"
+     },
+     {
+          id:"6",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Smart_2c.png",
+          name:"Smart 2c",
+          button:"PREVIEW"
+     },
+     {
+          id:"7",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Feather_2.png",
+          name:"Feather",
+          button:"PREVIEW"
+     },
+     {
+          id:"8",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Vivid_v2.png",
+          name:"Vivid",
+          button:"PREVIEW"
+     },
+]
+export default Proff
