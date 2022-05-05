@@ -25,6 +25,7 @@ export const Template = () => {
      return(
           <div className="container">
                <div className="bgcolor">
+                    
                     <div className="component-div">
                          <div className="LeftDiv">
                               {Left_Div_Compo.map((e) => {
@@ -38,14 +39,22 @@ export const Template = () => {
                               </div>
                               <div className="modern-div">
                                    <span className="smalltext">MODERN</span>
+                                   
                               </div>
                               <div className="pictures">
                                    {
                                         items.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {button,name,video,image} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -61,10 +70,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         temps.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -83,10 +99,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         dyna.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -102,10 +125,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         gdata.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -124,10 +154,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         round.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -143,10 +180,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         grad.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>
@@ -165,10 +209,17 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         basic.map((elem) => {
-                                             const  {image,button,name} = elem
+                                             const  {image,button,name,video} = elem
                                              return(
                                                   <div className="images-div">
-                                                       <img className="height" src={image} alt="" />
+                                                       <video className="height"
+                                                       poster={image} 
+                                                       autoPlay
+                                                       onMouseOver={event => event.target.play()} 
+                                                       onMouseOut={event => event.target.pause()} 
+                                                       controls="constrol"
+                                                       src={video}
+                                                       />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
                                                             <Button>{button}</Button>

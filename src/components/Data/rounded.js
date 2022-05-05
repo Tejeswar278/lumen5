@@ -3,43 +3,50 @@ const Rounded  = [
           id:"1",
           image:"https://storage.googleapis.com/lumen5-site-images/prev_eclipse_landscape.png",
           name:"Eclipse",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/prev_eclipse_landscape3.mp4"
      },
      {
           id:"2",
           image:"https://storage.googleapis.com/lumen5-prod-lottie/Billow/Preview/Billow_thumbnailver4.png",
           name:"Billow",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-lottie/Billow/Preview/Billow-new_3.m4v"
      },
      {
           id:"3",
           image:"https://storage.googleapis.com/lumen5-prod-lottie/Orbit/Previews/Preview_Orbit_Land_v2c.png",
           name:"Orbit",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-lottie/Orbit/Previews/Preview_Orbit_Land_v2c.mp4"
      },
      {
           id:"4",
           image:"https://storage.googleapis.com/lumen5-prod-lottie/Circuit/Preview/Circuit_thumbnail_2.png",
           name:"Circuit",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-lottie/Circuit/Preview/Preview_Circuit_02.m4v"
      },
      {
           id:"5",
           image:"https://storage.googleapis.com/lumen5-site-images/Preview_Focus.png",
           name:"Focus",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Circle_mask_v3.mp4"
      },
      {
           id:"6",
           image:"https://storage.googleapis.com/lumen5-site-images/Prev_Brilliant_v2.png",
           name:"Brilliant",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Brilliant_v2.mp4"
      },
      {
           id:"7",
           image:"https://storage.googleapis.com/lumen5-site-images/Prev_Circle_text_box.png",
           name:"Lively",
-          button:"PREVIEW"
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Circle_text_box_v2.mp4"
      }
 ]
 

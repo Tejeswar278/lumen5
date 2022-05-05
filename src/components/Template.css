@@ -64,7 +64,7 @@
 .images-div{
      /* border: 1px solid red; */
      background-color: white;
-     height: 211px;
+     height: 230px;
      width: 319px;
      margin-top: 20px;
      cursor: pointer;
@@ -74,6 +74,7 @@
      line-height: 24px;
      font-weight: 600;
      margin: 5px 0 0 15px;
+     
 }
 .flex-div{
      /* border: 1px solid green; */
@@ -87,6 +88,6 @@
      text-align: center;
 }
 .height{
-     height: 164px;
-     width: 319px;
+     height: 179px;
+     width: 320px;
 }
