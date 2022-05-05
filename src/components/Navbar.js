@@ -10,6 +10,7 @@ return (
             <Link to="/" className="navbar-logo"><img className="lumen-icon" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="lumen icon"/></Link>
             </div>
             <div className="nav-items">
+                <div><Link to="/">Home</Link></div>
                 <div>Create</div>
                 <div>Pricing</div>
                 <div>Enterprise</div>
