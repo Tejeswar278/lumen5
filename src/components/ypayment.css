@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#container>div {
+    height: auto;
+    width: 45%;
+    /* border: 1px solid red; */
+}
+
+#leftDiv {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+#leftDiv>div {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+hr {
+    color: gray;
+}
+
+#lightText {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+#lightText {
+    color: gray;
+    font-size: 20px;
+}
+
+.amount {
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(83, 82, 82);
+    /* border: 1px solid red; */
+}
+
+.container2 {
+    width: 100%;
+    padding-left: 10%;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(150, 141, 141, 0.397);
+}
+
+#card {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px 5px 0 0;
+    background-size: 30px;
+    background-image: url("https://js.stripe.com/v3/fingerprinted/img/visa-365725566f9578a9589553aa9296d178.svg ");
+    /* background-image: url("https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg"); */
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#card:focus {
+    background-image: none;
+}
+
+input,
+select {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#mmyycvc {
+    width: 50%;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.name {
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.EnterAdd {
+    text-decoration: underline;
+}
+
+.right3 {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.right31 {
+    /* border: 1px solid red; */
+    width: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+
+}
+
+.right32>p {
+    /* border: 1px solid red; */
+    margin: auto;
+
+}
+
+.right32 .right321 {
+    /* border: 1px solid red; */
+    margin: auto;
+    color: gray;
+}
+
+#subscribe {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(88, 70, 246);
+    color: white;
+    font-size: 17px;
+}
+
+h4 {
+    margin-bottom: 3px;
+    color: gray;
+}
+
+.confirm {
+
+    text-align: center;
+
+}
+
+img {
+    width: 150px;
+}
+
+
+@media screen and (min-width:80px) and (max-width:650px) {
+    #container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #container>div {
+        height: auto;
+        width: auto;
+    }
+
+    #leftDiv {
+        width: 100%;
+    }
+
+    #leftDiv {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+}
