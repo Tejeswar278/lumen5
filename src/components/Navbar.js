@@ -37,6 +37,8 @@ return (
             </div>
             <div className="nav-items">
                 <div><Link to="/">Home</Link></div>
+                <div><Link to="/publish">Publish</Link></div>
+                <div><Link to="/">Create</Link></div>
                 {/* <div className='dropdown'>
                     <Button
                         id="basic-button"
