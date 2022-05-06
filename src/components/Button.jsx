@@ -34,10 +34,23 @@ const Show_Button = styled.button`
      border-radius: 40px;
      height: 45px;
      width: 110px;
-
+     cursor: pointer;
+     
      &:hover{
           background-color: #909090;
      }
 `;
 
-export {Button,Show_Button}
+const Left_div_compo = styled.div`
+     color: #7e889a;
+     width: 496px;
+     height: auto;
+     margin: 7px 0 0 43px;
+     cursor: pointer;
+
+     &:hover{
+          color: black;
+     }
+`
+
+export {Button,Show_Button,Left_div_compo}

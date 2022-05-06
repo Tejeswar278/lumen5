@@ -7,7 +7,8 @@ import Geometric from "./Data/geometric"
 import Rounded from "./Data/rounded"
 import Gradients from "./Data/Gradients"
 import Basic from "./Data/basic"
-import { Button,Show_Button } from "./Button"
+import { Button,Show_Button,Left_div_compo } from "./Button"
+import Navbar from "./Navbar"
 
 
 const Left_Div_Compo = ["Recent templates","Modern","Professional","Dynamic","Geometric","Rounded","Gradients","Basic"];
@@ -25,11 +26,10 @@ export const Template = () => {
      return(
           <div className="container">
                <div className="bgcolor">
-                    
                     <div className="component-div">
                          <div className="LeftDiv">
                               {Left_Div_Compo.map((e) => {
-                                   return <div className="component"> {e} </div>
+                                   return <Left_div_compo className="component"> {e} </Left_div_compo>  
                               })}
                          </div>
                          <div className="right-div">
@@ -39,7 +39,6 @@ export const Template = () => {
                               </div>
                               <div className="modern-div">
                                    <span className="smalltext">MODERN</span>
-                                   
                               </div>
                               <div className="pictures">
                                    {
