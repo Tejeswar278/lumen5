@@ -1,0 +1,251 @@
+/* .ypayment {
+    display: flex;
+    margin: 1%;
+}
+
+.leftBox {
+    width: 50%;
+    margin-left: 0px;
+    border: 1px solid red;
+}
+
+.leftBox img {
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+}
+
+
+.left1 {
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.per p {
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: -1%;
+    margin-left: 25%;
+}
+
+.left2 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.left2a p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Billed {
+    color: gray;
+}
+
+.left2b {
+    margin-top: -0.3%;
+    margin-bottom: 0px;
+}
+
+.left3 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.left4 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.left5 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.rightBox {
+    width: 50%;
+    margin-left: 0px;
+    border: 1px solid green;
+}
+
+.right1 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.right2 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.right3 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.right4 {
+    margin: auto;
+    border: 1px solid red;
+}
+
+.right4 p {
+    margin: auto;
+}
+
+.EnterAdd {
+    text-decoration: underline;
+} */
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#container>div {
+    height: auto;
+    width: 40%;
+}
+
+#leftDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leftDiv>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    color: gray;
+}
+
+#lightText {
+    display: flex;
+    flex-direction: column;
+}
+
+#lightText {
+    color: gray;
+    font-size: 20px;
+}
+
+.amount {
+    font-size: 40px;
+}
+
+
+#subscribe {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(88, 70, 246);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.container2 {
+
+    height: 600px;
+    padding-left: 10%;
+    width: 40%;
+
+    box-sizing: border-box;
+    border-left: 1px solid rgba(150, 141, 141, 0.397);
+}
+
+#card {
+    width: 98.5%;
+    height: 25px;
+    border-radius: 5px 5px 0 0;
+    background-size: 30px;
+    background-image: url("https://js.stripe.com/v3/fingerprinted/img/visa-365725566f9578a9589553aa9296d178.svg ");
+    /* background-image: url("https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg"); */
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#card:focus {
+    background-image: none;
+}
+
+input,
+select {
+    width: 98%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#mmyycvc {
+    width: 48%;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+#subscribe {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(88, 70, 246);
+    color: white;
+    font-size: 17px;
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+.confirm {
+
+    text-align: center;
+
+}
+
+img {
+    width: 150px;
+}
+
+
+@media all and (min-width:80px) and (max-width:650px) {
+    #container {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #container>div {
+        height: auto;
+        width: auto;
+    }
+
+    #leftDiv {
+        width: 100%;
+    }
+
+    #leftDiv {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+}
