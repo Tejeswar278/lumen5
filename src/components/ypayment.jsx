@@ -1,3 +1,6 @@
+import "./ypayment.css";
+
+// export default function YpaymentDetails() {
 export const YpaymentDetails = (ypayment) => {
   return (
     <>
@@ -13,21 +16,21 @@ export const YpaymentDetails = (ypayment) => {
             <p class="subscriptionModel"> Subscribe to Premium - v1.5 (yearly)</p>
             <div class="amount">
               $ <span> </span>USD
-              {ypayment.price}
+              {/* {ypayment.price} */}
             </div>
           </div>
           <div class="premiumPayPage">
             <h3>Premium - v1.5(yearly) </h3>
             <h3 id="price1">
               $ <span> </span>
-              {ypayment.price}
+              {/* {ypayment.price} */}
             </h3>
           </div>
           <div id="toatlAmt">
             <h3>Subtotal</h3>
             <h3 id="price2">
               $ <span> </span>
-              {ypayment.price}
+              {/* {ypayment.price} */}
             </h3>
           </div>
           <hr />
@@ -40,7 +43,7 @@ export const YpaymentDetails = (ypayment) => {
             <h3>Total due today </h3>
             <h3 id="price3">
               $ <span> </span>
-              {ypayment.price}
+              {/* {ypayment.price} */}
             </h3>
           </div>
         </div>
