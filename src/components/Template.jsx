@@ -7,8 +7,9 @@ import Geometric from "./Data/geometric"
 import Rounded from "./Data/rounded"
 import Gradients from "./Data/Gradients"
 import Basic from "./Data/basic"
-import { Button,Show_Button,Left_div_compo } from "./Button"
+import { Show_Button,Left_div_compo } from "./Button"
 import Navbar from "./Navbar"
+import { ReactModal } from "./ReactModal"
 
 
 const Left_Div_Compo = ["Recent templates","Modern","Professional","Dynamic","Geometric","Rounded","Gradients","Basic"];
@@ -25,6 +26,9 @@ export const Template = () => {
 
      return(
           <div className="container">
+               <div>
+                    <Navbar/>
+               </div>
                <div className="bgcolor">
                     <div className="component-div">
                          <div className="LeftDiv">
@@ -43,20 +47,19 @@ export const Template = () => {
                               <div className="pictures">
                                    {
                                         items.map((elem) => {
-                                             const  {button,name,video,image} = elem
+                                             const  {name,video,image} = elem
                                              return(
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
+                                                       muted
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -74,15 +77,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -103,15 +105,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -129,15 +130,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -158,15 +158,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -184,15 +183,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );
@@ -213,15 +211,14 @@ export const Template = () => {
                                                   <div className="images-div">
                                                        <video className="height"
                                                        poster={image} 
-                                                       autoPlay
+                                                       muted
                                                        onMouseOver={event => event.target.play()} 
                                                        onMouseOut={event => event.target.pause()} 
-                                                       controls="constrol"
                                                        src={video}
                                                        />
                                                        <div className="flex-div">
                                                             <p className="img-text">{name}</p>
-                                                            <Button>{button}</Button>
+                                                            <ReactModal/>
                                                        </div>
                                                   </div>
                                              );

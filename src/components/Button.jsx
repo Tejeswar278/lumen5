@@ -35,11 +35,30 @@ const Show_Button = styled.button`
      height: 45px;
      width: 110px;
      cursor: pointer;
-     
+
      &:hover{
           background-color: #909090;
      }
 `;
+
+const Btn_For_navbar = styled.button`
+     width: 67px;
+     height: 20px;
+     background-color: white;
+     border: 1px solid #5846f6;
+     color: #5846f6;
+     cursor: pointer;
+     line-height: 20px;
+     padding: 0px 5px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+
+     &:hover{
+          background-color: #5846f6;
+          color: white;
+          text-decoration: underline;
+     }
+`
 
 const Left_div_compo = styled.div`
      color: #7e889a;
@@ -53,4 +72,4 @@ const Left_div_compo = styled.div`
      }
 `
 
-export {Button,Show_Button,Left_div_compo}
+export { Button,Show_Button,Left_div_compo,Btn_For_navbar }
