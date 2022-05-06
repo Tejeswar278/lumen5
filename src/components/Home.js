@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Home.css"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import Footer from "./Footer";
 
 
 
@@ -26,27 +25,9 @@ export default function Home(){
     // IMAGE COMPONENT FOR RE-RENDERING
     const Image = ({url}) => {
         return (
-            <img className="back-img" src={url}/>
+            <img className="back-img" src={url} alt="lumen"/>
         )
     }
-
-    const Cards = [
-        {
-            cimg: "https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg",
-            description: "Video Marketing: How to Get Started [Step by Step]",
-
-        },
-        {
-            cimg: "https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg",
-            description: "How to Increase Your Facebook Video Views [Complete Guide]",
-            
-        },
-        {
-            cimg: "https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg",
-            description: "The Importance of Video in Your Content Strategy",
-            
-        }
-    ]
 
     //SLIDING IMAGES DATA
     const slideImages = [
@@ -273,7 +254,7 @@ export default function Home(){
                 <div className="fa-solid fa-palette "></div>
                     <div>Making it easy to <br/>stay on brand</div>
                     <div>It has never been easier to stay on brand.<br/>With Lumen5 templates, you can customize<br/>each video with your unique logo, <br/>watermark, fonts, colors, and more.</div>
-                    <div><Link to="/signUp" className='nav-links'>Get started free <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
+                    <div><Link to="/signUp" className='nav-links'>Get started free <i className="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
                     <div>“Whenever I got in touch with Lumen5 I felt like my <br/>suggestions mattered and I was being listened to. <br/>It’s like I’m co-creating in a tiny way. It’s a great<br/>feeling.”</div>
                     <div className="width d-flex">
                         <div className="s4-rh-ld border">
@@ -301,7 +282,6 @@ export default function Home(){
                     {
                        
                     contentmarketvideos.map((url,i) => {
-                        console.log(url)
                         return <Video url={url} key={i}></Video>    
                     })}
                 </div>
@@ -328,6 +308,15 @@ export default function Home(){
                             </div>
                         ))} 
                     </Slide>
+                    
+                    </div>
+                    <div>   
+                        {slideImages.map((e,i)=>{
+                            return (
+                                console.log(e.icon)
+                                // <Image src={e.icon} key={i}></Image>
+                            )
+                        })}
                     </div>
             </section>
 

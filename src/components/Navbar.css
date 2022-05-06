@@ -3,7 +3,13 @@
     border: 1px solid red;
     height: 100px;
     width: 90%;
-    margin: auto;
+    margin:auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+transition: 0.4s;
+    
 }
 
 .nav-icon {
@@ -25,4 +31,21 @@
 
 .nav-items > div {
     padding-right: 45px;
+}
+
+.basic-button {
+    background-color: white;
+    color: black;
+}
+
+.basic-button:hover{
+    background-color: none;
+}
+
+.dropdown {
+    background-color: white;
+}
+
+.dropdown:hover {
+    background-color: white;
 }
