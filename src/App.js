@@ -9,22 +9,21 @@ import Copyright from './components/Copyright';
 import Pricing from './components/Pricing';
 import Enterprise from './components/Enterprise';
 import Casestudy from './components/Casestudy';
+import { Publish } from './components/Publish';
 
 function App() {
   return (
     <div className="App">
      <Router>
-        <Navbar></Navbar>
         <Routes>
           <Route path="/" exact element={<Home/>}></Route>
+          <Route path="/publish" exact element={<Publish/>}></Route>
           <Route path="/pricing" exact element={<Pricing/>}></Route>
           <Route path="/enterprise" exact element={<Enterprise/>}></Route>
           <Route path="/casestudy" exact element={<Casestudy/>}></Route>
           <Route path="/login" exact element={<Login/>}></Route>
           <Route path="/signup" exact element={<SignUp/>}></Route>
         </Routes>
-        <Footer></Footer>
-        <Copyright></Copyright>
       </Router>
     </div>
   );

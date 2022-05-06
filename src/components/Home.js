@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "./Home.css"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-
+import Navbar from "./Navbar"
+import Footer from "./Footer";
+import Copyright from "./Copyright";
 
 
 
@@ -13,7 +15,8 @@ export default function Home(){
         return (
             <video
                 src={url}
-                controls="pause"
+                controls="controls"
+                onMouseLeave="nocontrols"
                 onMouseOver={event => {event.target.play()}}
                 onMouseOut={event => event.target.pause()}
                 muted={true}
@@ -155,7 +158,9 @@ export default function Home(){
     }
     
     return (
+        
         <div className="container">
+            <Navbar></Navbar>
             {/* SECTION 1 */}
             <section className="section1 m-tb">
                 <div>
@@ -188,7 +193,7 @@ export default function Home(){
             <section className="section3 m-b">
                 <div className="text-c">Captivating video templates</div>
                 <div className="text-c m-b">Drag and drop. No experience required.</div>
-                <div className="sec3-vs">
+                <div className="sec3-vs ">
                 {video1.map((url,i) => {
                         console.log(url)
                         return <Video url={url} key={i}></Video>    
@@ -362,6 +367,8 @@ export default function Home(){
                     <div><button><Link to="/signup">Sign up</Link></button></div>
                 </div>
             </section>
+            <Footer></Footer>
+        <Copyright></Copyright>
         </div>
        
     )
