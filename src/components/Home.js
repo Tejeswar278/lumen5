@@ -16,8 +16,6 @@ export default function Home(){
         return (
             <video
                 src={url}
-                controls="controls"
-                onMouseLeave="nocontrols"
                 onMouseOver={event => {event.target.play()}}
                 onMouseOut={event => event.target.pause()}
                 muted={true}
