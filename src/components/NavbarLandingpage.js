@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavbarLandingpage.css";
 import {FaAngleDown} from "react-icons/fa" 
 
-function Navbar () {
+function NavbarLandingpage () {
     const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -14,7 +14,7 @@ function Navbar () {
   };
 return (
     <>
-        <nav className="navbar">
+        <nav className="navbarLanding">
             <div className="nav-icon">
             <Link to="/" className="navbar-logo"><img className="lumen-icon" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="lumen icon"/></Link>
             </div>
@@ -39,4 +39,4 @@ return (
 )
 }
 
-export default Navbar;
+export default NavbarLandingpage;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import Navbar from "./Navbar"
+import NavbarLandingpage from "./NavbarLandingpage"
 import Footer from "./Footer";
 import Copyright from "./Copyright";
 
@@ -160,8 +160,8 @@ export default function Home(){
     
     return (
         
-        <div className="container">
-            <Navbar></Navbar>
+        <div className="containerlanding">
+            <NavbarLandingpage></NavbarLandingpage>
             {/* SECTION 1 */}
             <section className="section1 m-t">
                 <div className="sec1-1">
@@ -203,24 +203,24 @@ export default function Home(){
             </section>
 
             {/* SECTION 4 */}
-            <section className="section4 m-b">
-                <div>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="sec4-img"/>
+            <section className="section4 ">
+                <div className="imgdiv">
+                    <img className="sec4-img" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="sec4-img"/>
                 </div>
-                <div>
+                <div className="sec4-2">
                     <div className="file-i"><i class="fa-solid fa-file-lines file-icon"></i></div>
-                    <div>Transform blog posts <br/>into videos with A.I.</div>
-                    <div>Starting from a blank page is hard — and <br/>with Lumen5, you don’t have to. Our AI-<br/>powered technology helps you storyboard <br/>your ideas, fit your content to a layout, and <br/>find music and visuals that enhance your <br/>message.</div>
-                    <div><Link to="/signUp" className='nav-links'>Get started free <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
-                    <div>“Lumen5 has enabled us to create more videos <br/>and drive more traffic, while having more time to <br/>invest in other projects.”</div>
+                    <div className="sec4-2-2">Transform blog posts <br/>into videos with A.I.</div>
+                    <div className="sec4-2-3">Starting from a blank page is hard — and <br/>with Lumen5, you don’t have to. Our AI-<br/>powered technology helps you storyboard <br/>your ideas, fit your content to a layout, and <br/>find music and visuals that enhance your <br/>message.</div>
+                    <div className="sec4-2-4"><Link to="/signup" className='nav-links'>Get started for free <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
+                    <div className="sec4-2-5">“Lumen5 has enabled us to create more videos <br/>and drive more traffic, while having more time to <br/>invest in other projects.”</div>
                     <div className="width d-flex">
-                        <div className="s4-rh-ld border">
-                            <img className="width" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg" alt="s4-img"/>
+                        <div className="s4-rh-ld  ">
+                            <img className="width sec4-img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg" alt="s4-img"/>
                         </div>
-                        <div className="s4-lh-ld border">
-                            <div>Drew Sykes, Social Media Director</div>
-                            <div>NC STATE</div>
-                            <div>UNIVERSITY</div>
+                        <div className="s4-lh-ld ">
+                            <div><b>Drew Sykes</b>, Social Media Director</div>
+                            <div className="sec4-nc">NC STATE</div>
+                            <div className="sec4-un">UNIVERSITY</div>
                         </div>
                     </div>
                 </div>
@@ -228,8 +228,8 @@ export default function Home(){
 
             {/* SECTION 5 */}
             <section className="section4 border m-b">
-                <div>
-                    <div className="fa-solid fa-image "></div>
+                <div className="sec5-1 border">
+                    <div className="file-i" ><i className="fa-solid fa-image file-icon"></i></div>
                     <div>Content library with <br/>millions of stock <br/>photos & videos</div>
                     <div>The Lumen5 media library gives you <br/>easy access to millions of photos,<br/>video clips, and audio files, so you <br/>always have the elements you need<br/>to create the perfect video.</div>
                     <div><Link to="/signUp" className='nav-links'>View plans <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
@@ -368,7 +368,7 @@ export default function Home(){
                     <div><button><Link to="/signup">Sign up</Link></button></div>
                 </div>
             </section>
-            <Footer></Footer>
+        <Footer></Footer>
         <Copyright></Copyright>
         </div>
        

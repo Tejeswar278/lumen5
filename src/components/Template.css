@@ -1,6 +1,7 @@
 .container{
      /* border: 1px solid black; */
      margin: 0px;
+     width: 100%;
      padding: 0px;
      font-family: Poppins, sans-serif;
 }
@@ -52,8 +53,8 @@
      margin: 72px 0 0 0;
 }
 .pictures{
-     /* border: 1px solid green; */
-     border-top: 1px solid grey;
+     border: 1px solid green;
+     /* border-top: 1px solid grey; */
      width: 100%;
      margin-top: 10px;
      display:  grid;
@@ -61,7 +62,7 @@
      grid-gap: 1px;
 }
 .images-div{
-     /* border: 1px solid red; */
+     border: 1px solid red;
      background-color: white;
      height: 223px;
      width: 300px;
