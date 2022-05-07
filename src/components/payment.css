@@ -31,25 +31,63 @@ hr {
     color: gray;
 }
 
-#lightText {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
+.premiumPayPage {
+    color: gray;
+}
+
+#toatlAmt {
+    color: gray;
 }
 
 #lightText {
+    display: flex;
+    flex-direction: column;
     color: gray;
     font-size: 20px;
+    /* border: 1px solid red; */
 }
 
 .amount {
     font-size: 40px;
+    display: flex;
+    color: black;
+    font-weight: bolder;
 }
 
 h3 {
     color: rgb(83, 82, 82);
     /* border: 1px solid red; */
 }
+
+.per {
+    font-size: 1rem;
+    margin-top: 2%;
+    margin-left: 3%;
+    color: gray;
+}
+
+.per p {
+    font-size: 1rem;
+    margin-top: -3%;
+    margin-bottom: -3%;
+}
+
+.Billed {
+    margin-top: -4%;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+#subtoatal {
+    color: gray;
+    /* border: 1px solid red; */
+}
+
+#dueAmt {
+    color: gray;
+    /* border: 1px solid red; */
+}
+
 
 .container2 {
     width: 100%;
@@ -58,15 +96,29 @@ h3 {
     border-left: 1px solid rgba(150, 141, 141, 0.397);
 }
 
-#card {
+
+.card {
+    display: flex;
     width: 100%;
-    height: 25px;
-    border-radius: 5px 5px 0 0;
+    height: 25x;
+    border-radius: 5px 5px 5px 5px;
     background-size: 30px;
-    background-image: url("https://js.stripe.com/v3/fingerprinted/img/visa-365725566f9578a9589553aa9296d178.svg ");
-    /* background-image: url("https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg"); */
-    background-repeat: no-repeat;
-    background-position: right;
+    /* border: 1px solid red; */
+}
+
+.cardimg {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.card img {
+    display: flex;
+    width: 30%;
+    height: 25px;
+    margin: auto;
+    /* border: 1px solid gray; */
+    border-radius: 5px 5px 5px 5px;
 }
 
 #card:focus {
@@ -79,12 +131,15 @@ select {
     height: 25px;
     border-radius: 5px;
     border: 1px solid grey;
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
 }
 
 #mmyycvc {
     width: 50%;
-    border-radius: 0 0 5px 5px;
-    border-top: 0;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: -50%;
+
 }
 
 .name {

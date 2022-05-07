@@ -1,0 +1,59 @@
+const Basic = [
+     {
+          id:"1",
+          image:"https://storage.googleapis.com/lumen5-site-images/Preview_Regal.png",
+          name:"Regal",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Regal_v2.mp4"
+     },
+     {
+          id:"2",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Classic_2c_v2.png",
+          name:"Classic 2c",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Classic_2c_v2.mp4"
+     },
+     {
+          id:"3",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Sleek_2c.png",
+          name:"Sleek 2c",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Sleek_2c_v2.mp4"
+     },
+     {
+          id:"4",
+          image:"https://storage.googleapis.com/lumen5-site-images/Preview_Smart.png",
+          name:"Smart",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Smart_2_v2.mp4"
+     },
+     {
+          id:"5",
+          image:"https://storage.googleapis.com/lumen5-prod-images/tmp-placeholder-img68a6RX.jpg",
+          name:"Strive For Greatness",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-renderedvideos/videorenderingdataxBCp29dKPopQ.mp4"
+     },
+     {
+          id:"6",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Two_BG_Color.png",
+          name:"Modern",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Two_BG_Color_v2.mp4"
+     },
+     {
+          id:"7",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Classic_2.png",
+          name:"Classic",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Classic_2_v2.mp4"
+     },
+     {
+          id:"8",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Sleek_2.png",
+          name:"Sleek",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Sleek_2_v2.mp4"
+     },
+]
+export default Basic

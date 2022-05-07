@@ -1,0 +1,38 @@
+.navbar {
+     display: flex;
+     /* border: 1px solid red; */
+     height: 58px;
+     width: 100%;
+     margin: auto;
+ }
+
+ .flex{
+     display: flex;
+ }
+ 
+ .nav-icon {
+     width: 20%;
+     margin-left: 15px;
+     /* border: 1px solid green; */
+ }
+ .btnfornav {
+      margin:20px 0 0 65px;
+      font-size: 11px;
+ } 
+ 
+ .lumen-icon {
+     height: 100%;
+     width: fit-content;
+ }
+ 
+ .nav-items {
+     display: flex;
+     /* border: 1px solid black; */
+     width: 100%;
+     justify-content: flex-end;
+     align-items: center;
+ }
+ 
+ .nav-items > div {
+     padding-right: 45px;
+ }
