@@ -8,7 +8,7 @@ import Rounded from "./Data/rounded"
 import Gradients from "./Data/Gradients"
 import Basic from "./Data/basic"
 import { Show_Button,Left_div_compo } from "./Button"
-import Navbar from "./Navbar"
+import Navbar_For_Template from "./Navbar_For_Template"
 import { ReactModal } from "./ReactModal"
 
 
@@ -27,7 +27,7 @@ export const Template = () => {
      return(
           <div className="container">
                <div>
-                    <Navbar/>
+                    <Navbar_For_Template/>
                </div>
                <div className="bgcolor">
                     <div className="component-div">

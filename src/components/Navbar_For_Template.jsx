@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Btn_For_navbar,Left_div_compo } from "./Button";
-import "./Navbar.css";
+import "./Navbar_For_Template.css";
 
 function Navbar () {
 return (

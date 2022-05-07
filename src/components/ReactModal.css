@@ -98,5 +98,7 @@
      line-height: 21px;
      font-weight: 400;
      margin:5px 0 0 60px
-
+}
+.format-div > button:hover{
+     background-color: #5b49b5;
 }
