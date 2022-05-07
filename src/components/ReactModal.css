@@ -1,0 +1,104 @@
+.display-div{
+     /* border: 1px solid red; */
+     width: 598px;
+     height: 530px;
+     margin: auto;
+     margin-top: 210px;
+     margin-bottom: 210px;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 15px;
+}
+.top-div{
+     display: flex;
+     justify-content: space-between;
+}
+.top-div > p{
+     color: rgb(36, 40, 47);
+     font-family: Poppins, sans-serif;
+     font-size: 23px;
+     line-height: 31.5px;
+     margin: 22px 0 0 29px;
+     padding:0px 56px 0px 0px;
+     font-weight:400;
+}
+
+.top-div > button{
+     background-color: white;
+     width: 25px;
+     margin: 22px 29px 0 0;
+     font-size: 18px;
+     text-align: center;
+     cursor: pointer;
+     border: 0px;
+}
+.line{
+     width: 100%;
+     margin: 20px 0 0 0;
+     color: #e0e1e8;
+}
+
+.p-tag{
+     /* border: 1px solid black; */
+     margin: 10px 0 0 29px;
+     font-size: 17px;
+     line-height: 24px;
+     font-weight: 600;
+}
+.video-div{
+     /* border: 1px solid blue; */
+     height: 302px;
+     width: 540px;
+     margin: auto;
+     margin-top: 20px;
+     border-radius: 15px;
+}
+.video-display{
+     height: 302px;
+     width: 540px;
+     margin: auto;
+     border-radius: 15px;
+}
+.format-div{
+     /* border: 1px solid purple; */
+     margin: 20px 0 0 0;
+     display: flex;
+}
+.button-flex > p{
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 600;
+     font-family: Poppins, sans-serif;
+}
+.button-flex{
+     /* border: 1px solid black; */
+     display: flex;
+     width: 60%;
+     justify-content: space-evenly;
+}
+.button-flex > button{
+     background-color: #c8cbd9;
+     width: 40px;
+     height: 30px;
+     margin-top: 10px;
+     border: 0px;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.format-div > button{
+     width: 150px;
+     height: 45px;
+     font-size: 13px;
+     margin-left: 37px;
+     background-color: #5846f6;
+     color: white;
+     cursor: pointer;
+     border-radius: 25px;
+     border: 0px;
+     line-height: 21px;
+     font-weight: 400;
+     margin:5px 0 0 60px
+}
+.format-div > button:hover{
+     background-color: #5b49b5;
+}

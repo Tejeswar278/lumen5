@@ -1,0 +1,60 @@
+const Gradients = [
+     {
+          id:"1",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Foresight/Preview/Prev_Foresight_Land.png",
+          name:"Foresight",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-lottie/Foresight/Preview/Prev_Foresight_Land.mp4"
+     },
+     {
+          id:"2",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Polaris_landscape.png",
+          name:"Polaris",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Polaris_landscape2.mp4"
+     },
+     {
+          id:"3",
+          image:"https://storage.googleapis.com/lumen5-prod-lottie/Flux/Preview/V3/Flux_Landscape_Preview_v2.png",
+          name:"Flux",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-prod-lottie/Flux/Preview/V3/Flux_Landscape_Preview_v2.mp4"
+     },
+     {
+          id:"4",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2.png",
+          name:"Fresh",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2_v2.mp4"
+     },
+     {
+          id:"5",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Regal.png",
+          name:"Regal",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Regal_v2.mp4"
+     },
+     {
+          id:"6",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Smart_2b.png",
+          name:"Smart 2b",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Smart_2b_v2.mp4"
+     },
+     {
+          id:"7",
+          image:"https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2b.png",
+          name:"Fresh 2b",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2b_v2.mp4"
+     },
+     {
+          id:"8",
+          image:"https://storage.googleapis.com/lumen5-site-images/Preview_Fresh.png",
+          name:"Fresh",
+          button:"PREVIEW",
+          video:"https://storage.googleapis.com/lumen5-site-images/Prev_Fresh_2_v2.mp4"
+     },
+]
+
+export default Gradients
