@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "./Publish.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {FaCloudUploadAlt} from "react-icons/fa"
+import { useState } from "react"
 
 const Publish_Navbar = () => {
     return (
@@ -24,6 +25,18 @@ const Publish_Navbar = () => {
 }
 
 export const Publish = ()=> {
+
+    const [comment, setCommet] = useState("")
+    const [comments, setComments] = useState([])
+
+    const handleSubmit = () => {
+        setComments([
+            ...comments,comment
+        ])
+        // console.log(comments,comment)
+    }
+    // console.log(comments,comment)
+
     return (
         <>
             <Publish_Navbar></Publish_Navbar>
@@ -54,7 +67,7 @@ export const Publish = ()=> {
                         </div>
                         <div className="div5">
                             <div>
-                                <FontAwesomeIcon icon="fa-solid fa-link-simple" />
+                            <FaCloudUploadAlt/>
                             </div>
                             <div>
                                 <div>Anyone with the link<i className="fa-solid fa-link-simple"></i></div>
@@ -67,7 +80,14 @@ export const Publish = ()=> {
                     </div>
                 </div>
                 <div className="right-body">
-                    second half
+                    <div>Comment Scene</div>
+                    <div>
+                        {comments.map((e,i) => (
+                            <p key={i}>{e}</p>
+                        ))}
+                    </div>
+                    <input value={comment || ""} type="text" onChange={(e) => setCommet(e.target.value)} placeholder="Enter comment"/>
+                    <button onClick={handleSubmit} >Add comment</button>
                 </div>
             </div>
         </>

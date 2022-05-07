@@ -16,6 +16,7 @@ export default function Home(){
         return (
             <video
                 src={url}
+                controls
                 onMouseOver={event => {event.target.play()}}
                 onMouseOut={event => event.target.pause()}
                 muted={true}
@@ -155,26 +156,28 @@ export default function Home(){
         console.log(value)
         setValue(value);
     }
+
+    const [vidchange, setVidChabge] = useState(contentmarketvideos)
     
     return (
         
         <div className="container">
             <Navbar></Navbar>
             {/* SECTION 1 */}
-            <section className="section1 m-tb">
-                <div>
+            <section className="section1 m-t">
+                <div className="sec1-1">
                     <p className="sec1-p1">Video maker built to <br/>supercharge your <br/>current strategy</p>
-                    <p className="sec1-p2">Easily make videos for <br/>content marketing, <br/>thought leadership, and <br/>brand awareness in a snap.</p>
-                    <button>Sign up free</button>
+                    <p className="sec1-p2">Easily make videos for <br/><b>content marketing,<br/>thought leadership,</b>  and <br/><b>brand awareness</b> in a snap.</p>
+                    <button className="signupbtn">Sign up free</button>
                 </div>
-                <div>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png" alt="section1-i"/>
+                <div className="sec1-2">
+                    <img className="img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png" alt="section1-i"/>
                 </div>
             </section>
 
             {/* SECTION 2 */}
-            <section className="section2 m-b">
-                <div className="text-c">Over 6 million videos created by thousands of businesses</div>
+            <section className="section2">
+                <div className="text-c sec2-1">Over 6 million videos created by thousands of businesses</div>
                 <div className="sec2-d2">
                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" alt="sec2-img1"/>
                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png" alt="sec2-img2"/>
@@ -189,9 +192,9 @@ export default function Home(){
             </section>
 
             {/* SECTION 3 */}
-            <section className="section3 m-b">
-                <div className="text-c">Captivating video templates</div>
-                <div className="text-c m-b">Drag and drop. No experience required.</div>
+            <section className="section3">
+                <div className="text-c sec3-1">Captivating video templates</div>
+                <div className="text-c sec3-2">Drag and drop. No experience required.</div>
                 <div className="sec3-vs ">
                 {video1.map((url,i) => {
                         console.log(url)
@@ -275,16 +278,16 @@ export default function Home(){
             <section className="m-b">
                 <h1 className="text-c">Explore video make with lumen5</h1>
                 <div className="sec8-btns d-flex">
-                    <button id="contentmarket" value="contentmarketing" onClick={() => {handleChange("contentmarketvideos")}}>ContentMarketing</button>
-                    <button id="communicate" value="communication" onClick={() => {handleChange("communicationsvideos")}}>Communications</button>
-                    <button id="promotion" value="promotional" onClick={() => {handleChange("promotionalvideos")}}>Promotional</button>
-                    <button id="people" value="people" onClick={() => {handleChange("peopleAndculturevideos")}}>People&Culture</button>
-                    <button id="local" value="localization" onClick={() => {handleChange("localizationvideos")}}>Localization</button>
+                    <button id="contentmarket" value="contentmarketing" onClick={() => {setVidChabge(contentmarketvideos)}}>ContentMarketing</button>
+                    <button id="communicate" value="communication" onClick={() => {setVidChabge(communicationsvideos)}}>Communications</button>
+                    <button id="promotion" value="promotional" onClick={() => {setVidChabge(promotionalvideos)}}>Promotional</button>
+                    <button id="people" value="people" onClick={() => {setVidChabge(peopleAndculturevideos)}}>People&Culture</button>
+                    <button id="local" value="localization" onClick={() => {setVidChabge(localizationvideos)}}>Localization</button>
                 </div>
                 <div className="sec3-vs">
                     {
                        
-                    contentmarketvideos.map((url,i) => {
+                    vidchange.map((url,i) => {
                         return <Video url={url} key={i}></Video>    
                     })}
                 </div>

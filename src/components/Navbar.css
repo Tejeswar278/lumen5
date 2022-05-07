@@ -1,6 +1,6 @@
 .navbar {
+    z-index: 100;
     display: flex;
-    border: 1px solid red;
     height: 100px;
     margin:auto;
     position: sticky;
@@ -22,7 +22,6 @@ transition: 0.4s;
 
 .nav-items {
     display: flex;
-    border: 1px solid black;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
@@ -48,3 +47,99 @@ transition: 0.4s;
 .dropdown:hover {
     background-color: white;
 }
+
+.signupbtn {
+    border: 0;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.signinbtn {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.sulink {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    text-decoration: none;
+}
+
+.create {
+    text-decoration: none;
+}
+
+.create:hover {
+    color: black;
+}
+
+.pricing {
+    text-decoration: none;
+}
+
+.pricing:hover {
+    color: black;
+}
+
+.enterprise {
+    text-decoration: none;
+}
+
+.enterprise:hover {
+    color: black;
+}
+
+.casestudy {
+    text-decoration: none;
+}
+
+.casestudy:hover {
+    color: black;
+}
+
+.learn {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.learn:hover {
+    color: black;
+}
+
+.downarr {
+    padding-top: 5px;
+}
+
+.silink {
+    text-decoration: none;
+    color: blue;
+}
+
+.signinbtn:hover{
+    cursor: pointer;
+}
+
+.signupbtn:hover{
+    cursor: pointer;
+}
+
+.dropdwn {
+    border: 0;
+}
+
+.dropdwn > option {
+    border: 0;
+}
+
+
+
+
+
