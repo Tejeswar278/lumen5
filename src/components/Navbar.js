@@ -1,24 +1,7 @@
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import * as React from 'react';
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-//     window.onclick = function(e) {
-//         if (!e.target.matches('.dropbtn')) {
-//         var myDropdown = document.getElementById("myDropdown");
-//           if (myDropdown.classList.contains('show')) {
-//             myDropdown.classList.remove('show');
-//           }
-//         }
-//       }
-//   }
-
-
- 
+import {FaAngleDown} from "react-icons/fa" 
 
 function Navbar () {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -36,39 +19,20 @@ return (
             <Link to="/" className="navbar-logo"><img className="lumen-icon" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="lumen icon"/></Link>
             </div>
             <div className="nav-items">
-                <div><Link to="/">Home</Link></div>
-                <div><Link to="/publish">Publish</Link></div>
-                <div><Link to="/">Create</Link></div>
-                {/* <div className='dropdown'>
-                    <Button
-                        id="basic-button"
-                        
-                        
-                        color='sucess'
-                        onClick={handleClick}
-                    >
-                        Create
-                    </Button>
-                    <Menu
-                        id="basic-menu"
-                        anchorEl={anchorEl}
-                        open={open}
-                        onClose={handleClose}
-                        MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                        }}
-                    >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
-                    </Menu>
-                </div> */}
-                <div><Link to="/pricing">Pricing</Link></div>
-                <div><Link to="/enterprise">Enterprise</Link></div>
-                <div><Link to="/casestudy">Case studies</Link></div>
-                <div>Learn</div>
-                <div><button><Link to="/login">Login</Link></button></div>
-                <div><button variant="outlined" className='signupbtn'><Link to="/signup">Sign up</Link></button></div>
+                {/* <div><Link className='home' to="/">Home</Link></div> */}
+                <div><Link className='publish' to="/publish">Publish</Link></div>
+                <div></div>
+                <div className='learn'>
+                    <div><Link className='create' to="/">Create</Link></div><FaAngleDown className='downarr'/>
+                </div>
+                <div><Link className='pricing' to="/pricing">Pricing</Link></div>
+                <div><Link className='enterprise' to="/enterprise">Enterprise</Link></div>
+                <div><Link className='casestudy' to="/casestudy">Case studies</Link></div>
+                <div className='learn'>
+                    <div><Link className='create' to="/">Learn</Link></div><FaAngleDown className='downarr'/>
+                </div>
+                <div className='sibtn'><button className='signinbtn'><Link className='silink' to="/login">Login</Link></button></div>
+                <div className='subtn'><button className='signupbtn'><Link className='sulink' to="/signup">Sign up</Link></button></div>
             </div>
         </nav>
     </>

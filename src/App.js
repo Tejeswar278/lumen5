@@ -10,6 +10,7 @@ import Pricing from './components/Pricing';
 import Enterprise from './components/Enterprise';
 import Casestudy from './components/Casestudy';
 import { Publish } from './components/Publish';
+import { Link2 } from './Link2';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Router>
         <Routes>
           <Route path="/" exact element={<Home/>}></Route>
+          <Route path="/link2" exact element={<Link2/>}></Route>
           <Route path="/publish" exact element={<Publish/>}></Route>
           <Route path="/pricing" exact element={<Pricing/>}></Route>
           <Route path="/enterprise" exact element={<Enterprise/>}></Route>
