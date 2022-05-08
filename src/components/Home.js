@@ -15,7 +15,6 @@ export default function Home(){
         return (
             <video
                 src={url}
-                controls
                 onMouseOver={event => {event.target.play()}}
                 onMouseOut={event => event.target.pause()}
                 muted={true}
@@ -227,55 +226,55 @@ export default function Home(){
             </section>
 
             {/* SECTION 5 */}
-            <section className="section4 border m-b">
-                <div className="sec5-1 border">
+            <section className=" section5">
+                <div className="sec5-1">
                     <div className="file-i" ><i className="fa-solid fa-image file-icon"></i></div>
-                    <div>Content library with <br/>millions of stock <br/>photos & videos</div>
-                    <div>The Lumen5 media library gives you <br/>easy access to millions of photos,<br/>video clips, and audio files, so you <br/>always have the elements you need<br/>to create the perfect video.</div>
-                    <div><Link to="/signUp" className='nav-links'>View plans <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
-                    <div>“We promoted our downloadable study <br/>on top PPC skills for 2019 on social media <br/>using a short video created in Lumen5 in<br/>just 30 minutes, and decreased cost per<br/>download by 5x!”</div>
+                    <div className="sec4-2-2">Content library with <br/>millions of stock <br/>photos & videos</div>
+                    <div className="sec5-1-3">The Lumen5 media library gives you <br/>easy access to millions of photos,<br/>video clips, and audio files, so you <br/>always have the elements you need<br/>to create the perfect video.</div>
+                    <div className="sec5-1-4"><Link to="/signUp" className='nav-links'>View plans <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
+                    <div className="sec5-1-5">“We promoted our downloadable study <br/>on top PPC skills for 2019 on social media <br/>using a short video created in Lumen5 in<br/>just 30 minutes, and decreased cost per<br/>download by 5x!”</div>
                     <div className="width d-flex">
-                        <div className="s4-rh-ld border">
-                            <img className="width" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-julia-o.jpg" alt="s4-img"/>
+                        <div className="s4-rh-ld">
+                            <img className="width sec4-img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-julia-o.jpg" alt="s4-img"/>
                         </div>
-                        <div className="s4-lh-ld border">
-                            <div>Julia Olennikova, Product Marketing</div>
-                            <div>Manager</div>
-                            <div className="width"><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-semrush.png" alt="img-1"/></div>
+                        <div className="s4-lh-ld">
+                            <div className="sec5-1-6-2"><b>Julia Olennikova</b>, Product Marketing</div>
+                            <div className="sec5-1-6-2">Manager</div>
+                            <div className="width"><img className="width2" src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-semrush.png" alt="img-1"/></div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-media.png" alt="sec5-img"/>
+                    <img className="sec5-img" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-media.png" alt="sec5-img"/>
                 </div>
             </section>
 
             {/* SECTION 6 */}
-            <section className="section4 m-b">
-                <div>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-customize.png" alt="sec6-img"/>
+            <section className=" section4 section6">
+                <div className="">
+                    <img className="sec4-img" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-customize.png" alt="sec6-img"/>
                 </div>
-                <div>
-                <div className="fa-solid fa-palette "></div>
-                    <div>Making it easy to <br/>stay on brand</div>
-                    <div>It has never been easier to stay on brand.<br/>With Lumen5 templates, you can customize<br/>each video with your unique logo, <br/>watermark, fonts, colors, and more.</div>
-                    <div><Link to="/signUp" className='nav-links'>Get started free <i className="fa-solid fa-arrow-right-long"></i></Link></div><hr/>
-                    <div>“Whenever I got in touch with Lumen5 I felt like my <br/>suggestions mattered and I was being listened to. <br/>It’s like I’m co-creating in a tiny way. It’s a great<br/>feeling.”</div>
+                <div className="sec4-2">
+                <div  className="file-i"><i className="fa-solid fa-palette file-icon"></i></div>
+                    <div className="sec4-2-2">Making it easy to <br/>stay on brand</div>
+                    <div className="sec6-2-3">It has never been easier to stay on brand.<br/>With Lumen5 templates, you can customize<br/>each video with your unique logo, <br/>watermark, fonts, colors, and more.</div>
+                    <div className="sec4-2-4"><Link to="/signUp" className='nav-links'>Get started free <i className="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
+                    <div className="sec4-2-5">“Whenever I got in touch with Lumen5 I felt like my <br/>suggestions mattered and I was being listened to. <br/>It’s like I’m co-creating in a tiny way. It’s a great<br/>feeling.”</div>
                     <div className="width d-flex">
-                        <div className="s4-rh-ld border">
-                            <img className="width" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-promod-s.jpg" alt="s4-img"/>
+                        <div className="s4-rh-ld">
+                            <img className="width sec4-img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-promod-s.jpg" alt="s4-img"/>
                         </div>
-                        <div className="s4-lh-ld border">
-                            <div>Promod Sharma, Actuary & Insurance Consultant</div>
-                            <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-taxevity-color.png" alt="sec6-img"/></div>
+                        <div className="s4-lh-ld">
+                            <div className="sec6-mb"><b>Promod Sharma</b>, Actuary & Insurance Consultant</div>
+                            <div><img className="width2" src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-taxevity-color.png" alt="sec6-img"/></div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* SECTION 7 */}
-            <section className="m-b">
-                <h1 className="text-c">Explore video make with lumen5</h1>
+            <section className="section7">
+                <h1 className="text-c sec7-1">Explore videos make with Lumen5</h1>
                 <div className="sec8-btns d-flex">
                     <button id="contentmarket" value="contentmarketing" onClick={() => {setVidChabge(contentmarketvideos)}}>ContentMarketing</button>
                     <button id="communicate" value="communication" onClick={() => {setVidChabge(communicationsvideos)}}>Communications</button>
@@ -294,11 +293,11 @@ export default function Home(){
             </section>
             
             {/* SECTION 8 */}
-            <section className="section7 m-b">
-                    <h1>Customer sucess stories</h1>
-                    <div>Discover how leading brands are getting results with Lumen5.</div>
+            <section className="section8 ">
+                    <h1 className="sec8-1">Customer sucess stories</h1>
+                    <div className="sec8-2">Discover how leading brands are getting results with Lumen5.</div>
                     <div className="slide-container">
-                    <Slide>
+                    <Slide className="slide-comp">
                         {slideImages.map((slideImage, index)=> (
                             <div className="each-slide" key={index}>
                                 <div className="slide-img" style={{'backgroundImage': `url(${slideImage.url})`}}>
