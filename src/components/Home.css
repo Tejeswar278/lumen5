@@ -292,6 +292,10 @@ video:hover {
     margin-bottom: 60px;
 }
 
+.borderlite {
+    border: 1px solid lightgray;
+}
+
 
 
 .m-auto {
@@ -496,7 +500,7 @@ video:hover {
 }
 
 .section9 {
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .section10 {

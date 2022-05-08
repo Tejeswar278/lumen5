@@ -335,20 +335,20 @@ export default function Home(){
                 <div className="cards d-flex width">
                     
                     <div className="innercard d-flex w-50">
-                        <div className="card1 border w-30">
+                        <div className="card1 borderlite w-30">
                             <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb1 ">Video Marketing: <br/>How to Get Started <br/>[Step by Step]</div>
                             <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
                             
                         </div>
-                        <div className="card2 border w-30">
+                        <div className="card2 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb2">How to Increase <br/>Your Facebook <br/>Video Views <br/>[Complete Guide]</div>
                             <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
                         </div>
-                        <div className="card3 border w-30">
+                        <div className="card3 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb3">The Importance of <br/>Video in Your <br/>Content Strategy</div>
