@@ -1,7 +1,6 @@
 .container{
      /* border: 1px solid black; */
      margin: 0px;
-     width: 100%;
      padding: 0px;
      font-family: Poppins, sans-serif;
 }
@@ -13,14 +12,15 @@
      padding-bottom: 55px;
 }
 .component-div{
-     /* border: 1px solid black; */
+     /* border: 1px solid red; */
      width: 100%;
      padding: 58px 0 0 0;
      display: flex;
 }
 .LeftDiv{
+     /* border: 1px solid red; */
      color: #7e889a;
-     width: 400px;
+     width: 20%;
      height: auto;
      margin: 0 0 0 43px;
 }
@@ -53,42 +53,41 @@
      margin: 72px 0 0 0;
 }
 .pictures{
-     border: 1px solid green;
-     /* border-top: 1px solid grey; */
+     /* border: 1px solid black; */
+     border-top: 1px solid grey;
+     padding-top: 30px;
      width: 100%;
-     margin-top: 10px;
-     display:  grid;
+     display: grid;
      grid-template-columns: repeat(4,1fr);
-     grid-gap: 1px;
+     grid-gap: 30px;
+     margin: 20px 0 0 0;
+
 }
-.images-div{
-     border: 1px solid red;
-     background-color: white;
-     height: 223px;
-     width: 300px;
-     margin-top: 20px;
-     cursor: pointer;
+.height{
+     /* border: 1px solid red; */
+     width: 100%;
+     border-radius: 5px;
+}
+.flex-div{
+     display: flex;
+     justify-content: space-between;
      /* border: 1px solid green; */
+     width: 100%;
+     margin: 0px 0px 10px 0 ;
 }
 .img-text{
      font-size: 18px;
      line-height: 24px;
      font-weight: 600;
-     margin: 5px 0 0 15px;
-}
-.flex-div{
+     margin: 10px 0 0 15px;
      /* border: 1px solid green; */
-     display: flex;
-     justify-content: space-between;
+}
+.images-div{
+     background-color: white;
 }
 .btn-div{
      width: 100%;
      height: 50px;
      margin: 23px 0 0 0;
      text-align: center;
-}
-.height{
-     /* border: 1px solid red; */
-     height: 170px;
-     width: 300px;
 }
