@@ -31,7 +31,7 @@ return (
                 <div className='learn'>
                     <div><Link className='create' to="/">Learn</Link></div><FaAngleDown className='downarr'/>
                 </div>
-                <div className='sibtn'><button className='signinbtn'><Link className='silink' to="/login">Login</Link></button></div>
+                <div className='sibtn'><button className='signinbtn'><Link className='silink' to="/signin">Login</Link></button></div>
                 <div className='subtn'><button className='signupbtn'><Link className='sulink' to="/signup">Sign up</Link></button></div>
             </div>
         </nav>

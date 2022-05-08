@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transition: all 0.2s linear;
+  line-height: 1.5;
+  color: #24282f;
+}
+
+.cont {
+  display: flex;
+}
+
+.logo {
+  height: 0px;
+  visibility: hidden;
+}
+
+.sidepart {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 999;
+  flex-flow: column;
+  width: 27.5rem;
+  padding-bottom: 5%;
+  text-align: center;
+  gap: 1.5rem;
+  height: 22rem;
+  background-image: url("");
+  background-repeat: repeat;
+}
+
+.details {
+  margin-left: 8.5%;
+}
+
+.details > h1 {
+  color: #24282f;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 3rem;
+  padding-bottom: 1rem !important;
+}
+
+p {
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.credentials {
+  width: 35rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #9faabf;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.forgot {
+  display: flex;
+  color: #9faabf;
+  justify-content: end;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  font-size: 0.95rem;
+}
+
+.ac {
+  font-weight: 500;
+  color: #9faabf;
+  margin-bottom: 5rem;
+}
+
+.supage {
+  color: #5846f6;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.foot {
+  text-align: center;
+  color: #9faabf;
+  font-weight: bolder;
+}
+
+@media (max-width: 822px) {
+  .sidepart {
+    display: none;
+  }
+
+  .logo {
+    visibility: visible;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 2.7rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .logo {
+    visibility: visible;
+    margin-bottom: 1.3rem;
+    margin-top: 2rem;
+    height: 2rem;
+  }
+
+  .details > h1 {
+    color: #24282f;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 3rem;
+    padding-bottom: 1rem !important;
+  }
+
+  .credentials {
+    width: 15rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #9faabf;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  #normal {
+    width: 15rem;
+  }
+
+  .forgot {
+    display: flex;
+    color: #9faabf;
+    justify-content: start;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 0.95rem;
+  }
+
+  .ac {
+    font-weight: 500;
+    color: #9faabf;
+    margin-bottom: 4rem;
+    font-size: 15px;
+  }
+}
