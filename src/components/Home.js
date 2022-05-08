@@ -4,8 +4,8 @@ import "./Home.css"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import NavbarLandingpage from "./NavbarLandingpage"
-import Footer from "./Footer";
-import Copyright from "./Copyright";
+//import Footer from "./Footer";
+//import Copyright from "./Copyright";
 
 
 
@@ -367,8 +367,8 @@ export default function Home(){
                     <div><button><Link to="/signup">Sign up</Link></button></div>
                 </div>
             </section>
-        <Footer></Footer>
-        <Copyright></Copyright>
+        {/* <Footer></Footer>
+        <Copyright></Copyright> */}
         </div>
        
     )
