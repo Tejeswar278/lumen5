@@ -7,8 +7,10 @@ import { FaPager} from 'react-icons/fa';
 import { FaLink} from 'react-icons/fa';
 import {FaPlusCircle} from 'react-icons/fa';
 import {Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export  const CreatePage = ()=>{
+  const navigate = useNavigate();
   return (
     <>
     {/* Navbar of create page */}
@@ -21,7 +23,7 @@ export  const CreatePage = ()=>{
                 </div>
                 <div className="publish-nav-righthalf">
                     <div className="upgrade">
-                        <button className="upgrade-btn1">PUBLISH</button>
+                        <button className="upgrade-btn1" onClick={() => navigate('/publish')}>PUBLISH</button>
                     </div>
                     <div className="notification-user">
                         <div className="notification"><i className="fa-solid fa-bell n-icon-color"></i></div>

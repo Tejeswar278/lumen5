@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.ss {
+  width: 120%;
+}
+
 .logo {
   height: 0px;
   visibility: hidden;

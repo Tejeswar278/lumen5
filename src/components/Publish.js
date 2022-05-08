@@ -2,8 +2,11 @@ import { Link } from "react-router-dom"
 import "./Publish.css"
 import {FaCloudUploadAlt} from "react-icons/fa"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import NavbarLandingpage from "./NavbarLandingpage"
 
 const Publish_Navbar = () => {
+    const navigate = useNavigate();
     return (
         <div className="nav">
             <nav className="publish_navbar">
@@ -12,7 +15,7 @@ const Publish_Navbar = () => {
                 </div>
                 <div className="publish-nav-righthalf">
                     <div className="upgrade">
-                        <button className="upgrade-btn1">UPGRADE</button>
+                        <button className="upgrade-btn1" onClick={() => navigate('/ypayment')}>UPGRADE</button>
                     </div>
                     <div className="notification-user">
                         <div className="notification"><i className="fa-solid fa-bell n-icon-color"></i></div>
