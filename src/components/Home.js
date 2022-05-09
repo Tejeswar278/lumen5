@@ -34,7 +34,7 @@ export default function Home(){
         {
           url: 'https://storage.googleapis.com/lumen5-site-images/carousel-siemens-bg.png',
           caption: 'Slide 1',
-          icon: 'https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png',
+          icon: 'https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png',
           description: "“Thanks to Lumen5, we have been able to cut down on the time and costs related to video making.”",
           name: "Adrian Ngo",
           title: "Global Advertising and Sponsorships"
@@ -302,10 +302,14 @@ export default function Home(){
                             <div className="each-slide" key={index}>
                                 <div className="slide-img" style={{'backgroundImage': `url(${slideImage.url})`}}>
                                     <span className="slide-caption">
-                                        <Image className="background-img" url={slideImage.icon}></Image>
-                                        <p>{slideImage.description}</p>
-                                        <p>{slideImage.name}</p>
-                                        <p>{slideImage.title}</p>
+
+                                        <div className="box-c">
+                                            <Image className="background-img" url={slideImage.icon}></Image>
+                                            <p className="p-1">{slideImage.description}</p>
+                                            <p className="p-2">{slideImage.name}</p>
+                                            <p className="p-3">{slideImage.title}</p>
+                                            <p className="lastp"><Link to="/signUp" className="nav-linkss">Read story </Link><i class="fa-solid fa-arrow-right-long"></i></p>
+                                        </div>
                                         </span>
                                     
                                 </div>
@@ -314,41 +318,40 @@ export default function Home(){
                     </Slide>
                     
                     </div>
-                    <div>   
-                        {slideImages.map((e,i)=>{
+                    <div className="sec8-2">   
+                        {slideImages.map((slideImage,i)=>{
                             return (
-                                console.log(e.icon)
-                                // <Image src={e.icon} key={i}></Image>
+                                <Image className="sec8-2" url={slideImage.icon} key={i}></Image>
                             )
                         })}
                     </div>
             </section>
 
             {/* SECTION 9 */}
-            <section className="section9 border width m-b">
-                <div className="heading9">
+            <section className="section9 width ">
+                <div className="heading9 text-c">
                 Tips and tricks for amplifying<br/>your brand with video
                 </div>
-                <div className="cards d-flex border width">
+                <div className="cards d-flex width">
                     
-                    <div className="innercard d-flex border w-50">
-                        <div className="card1 border w-30">
+                    <div className="innercard d-flex w-50">
+                        <div className="card1 borderlite w-30">
                             <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg" alt="card"/>
-                            <div className="text-l p-l m-b">BLOG</div>
-                            <div className="text-l p-l m-b">Video Marketing: How to Get Started [Step by Step]</div>
+                            <div className="text-b p-l m-b">BLOG</div>
+                            <div className="text-l p-l mb1 ">Video Marketing: <br/>How to Get Started <br/>[Step by Step]</div>
                             <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
                             
                         </div>
-                        <div className="card2 border w-30">
+                        <div className="card2 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="card"/>
-                            <div className="text-l p-l m-b">BLOG</div>
-                            <div className="text-l p-l m-b">How to Increase Your Facebook Video Views [Complete Guide]</div>
+                            <div className="text-b p-l m-b">BLOG</div>
+                            <div className="text-l p-l mb2">How to Increase <br/>Your Facebook <br/>Video Views <br/>[Complete Guide]</div>
                             <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
                         </div>
-                        <div className="card3 border w-30">
+                        <div className="card3 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="card"/>
-                            <div className="text-l p-l m-b">BLOG</div>
-                            <div className="text-l p-l m-b">The Importance of Video in Your Content Strategy</div>
+                            <div className="text-b p-l m-b">BLOG</div>
+                            <div className="text-l p-l mb3">The Importance of <br/>Video in Your <br/>Content Strategy</div>
                             <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
                         </div>
                     </div>
@@ -356,19 +359,22 @@ export default function Home(){
             </section>
 
             {/* SECTION 10 */}
-            <section className="border width">
-                <div className="section10 border">
-                    <div>
+            <section className="section10 width">
+                <div >
+                    <div className="sec10-0"></div>
+                    <div className="sec10-1">
                     Join 800,000+ companies that are <br/>using Lumen5 to tell their stories.
                     </div>
-                    <div>
+                    <div className="sec10-2">
                     Lumen5 is a video creation software that helps marketers, <br/>publishers, and brands create video content in a breeze, <br/>without any technical expertise.
                     </div>
-                    <div><button><Link to="/signup">Sign up</Link></button></div>
+                    <div><button className="lastbtn"><Link className="signupbtnlast nav-links" to="/signup">Sign up free</Link></button></div>
                 </div>
             </section>
+        <section className="section11">
         <Footer></Footer>
         <Copyright></Copyright>
+        </section>
         </div>
        
     )

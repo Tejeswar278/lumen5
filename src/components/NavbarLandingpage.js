@@ -18,9 +18,9 @@ return (
             <div className="nav-icon">
             <Link to="/" className="navbar-logo"><img className="lumen-icon" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="lumen icon"/></Link>
             </div>
-            <div className="nav-items">
+            <div className="landing-nav-items">
                 {/* <div><Link className='home' to="/">Home</Link></div> */}
-                <div><Link className='publish' to="/publish">Publish</Link></div>
+                {/* <div><Link className='publish' to="/publish">Publish</Link></div> */}
                 <div></div>
                 <div className='learn'>
                     <div><Link className='create' to="/">Create</Link></div><FaAngleDown className='downarr'/>

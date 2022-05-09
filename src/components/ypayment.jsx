@@ -1,10 +1,12 @@
 import "./payment.css";
 
 export default function Ypayment({ ypayment }) {
-  console.log(ypayment.length);
-
+  // console.log(ypayment.length);
+// return (
+//   <div>hellow world</div>
+// )
   return (
-    // <>
+    <>
     <div id="container">
       <div id="leftDiv">
         <a href="./ypayment.jsx">
@@ -127,6 +129,6 @@ export default function Ypayment({ ypayment }) {
         </div>
       </div>
     </div>
-    // </>
+    </>
   );
 }

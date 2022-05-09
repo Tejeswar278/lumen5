@@ -8,19 +8,20 @@
 
 .left-footer {
     width: 40%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 50px 0px 0px 120px
     
 }
 
 .right-footer {
     width: 50%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 50px 0px 130px 0px;
+    margin-left: 120px;
 }
 
 .footer-img {
-    width: 15%;
+    width: 24%;
     justify-items: flex-start;
     margin-left: 0px;
     padding-left: 0px;
@@ -49,5 +50,9 @@
 }
 
 .first-ele {
-    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+.col2, .col3 {
+    margin-left: 20px;
 }

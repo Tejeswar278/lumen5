@@ -34,7 +34,7 @@ const Signup = () => {
   return (
     <div className="cont">
       <div className="sidepart">
-        <img src={img} alt="" />
+        <img className="ss" src={img} alt="" />
       </div>
       <div className="details">
         <img className="logo" src={img1} alt="" />

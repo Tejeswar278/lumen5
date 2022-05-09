@@ -41,7 +41,7 @@ export const ReactModal = () => {
               <button>9:16</button>
           </div>
          
-          <button onClick={() => navigate('/')}>USE THIS TEMPLATE</button>
+          <button onClick={() => navigate('/createpage')}>USE THIS TEMPLATE</button>
         </div>
         
       </Modal>
