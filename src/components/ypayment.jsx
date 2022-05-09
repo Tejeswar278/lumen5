@@ -1,10 +1,18 @@
 import "./payment.css";
+import { useNavigate } from "react-router-dom";
 
-export default function Ypayment({ ypayment }) {
+export default function Ypayment() {
+  const navigate = useNavigate();
   // console.log(ypayment.length);
 // return (
 //   <div>hellow world</div>
 // )
+const ypayment = [
+  {
+    price: "149",
+    id : "1"
+  }
+]
   return (
     <>
     <div id="container">
@@ -18,8 +26,8 @@ export default function Ypayment({ ypayment }) {
         <div id="lightText">
           <p className="subscriptionModel"> Subscribe to Premium - v1.5 (Annual)</p>
 
-          {ypayment.map((e) => (
-            <div key={e.id} className="amount">
+          {ypayment.map((e,i) => (
+            <div key={i} className="amount">
               $ <span> </span>
               {e.price}
               <div className="per">
@@ -120,7 +128,7 @@ export default function Ypayment({ ypayment }) {
             </div>
           </div>
           <br />
-          <input id="subscribe" type="submit" value="subscribe" />
+          <input id="subscribe" type="submit" value="subscribe" onClick={()=> {navigate("/thankyou")}}/>
         </form>
         <br />
         <div className="confirm">

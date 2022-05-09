@@ -11,6 +11,7 @@ import { Template } from "./components/Template";
 import "./components/CreatePage.css";
 import { CreatePage } from "./components/CreatePage";
 import Ypayment from "./components/ypayment";
+import Thankyou from "./components/Thankyou"
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/signup" exact element={<Signup />}></Route>
         <Route path="/createpage" exact element={<CreatePage />}></Route>
         <Route path="/ypayment" exact element={<Ypayment />}></Route>
+        <Route path="/thankyou" exact element={<Thankyou />}></Route>
       </Routes>
     </div>
   );

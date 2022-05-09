@@ -15,7 +15,7 @@ const Publish_Navbar = () => {
                 </div>
                 <div className="publish-nav-righthalf">
                     <div className="upgrade">
-                        <button className="upgrade-btn1" onClick={() => navigate('/ypayment')}>UPGRADE</button>
+                        <button className="upgrade-btn1" onClick={() => navigate('/pricing')}>UPGRADE</button>
                     </div>
                     <div className="notification-user">
                         <div className="notification"><i className="fa-solid fa-bell n-icon-color"></i></div>

@@ -3,6 +3,7 @@ import { Button2 } from "./button2";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from "react-router-dom"
 export const Pricingfn = () => {
   const [prices, setPrices] = useState([]);
   useEffect(() => {
@@ -14,8 +15,9 @@ export const Pricingfn = () => {
     );
     setPrices(data);
   };
+  const navigate = useNavigate();
   return (
-    <div className="pricing">
+    <div className="pricing3">
       <h4 className="jk">PRICING</h4>
       <h1 className="O">Plans for your video content creation strategy</h1>
       <div className="c">
@@ -30,7 +32,7 @@ export const Pricingfn = () => {
             <p className="chp">{t.pdesc}</p>
             <h6 className="cs">{t.save}</h6>
             <div className="Bt1">
-              <Button2 className="Bt">{t.button}</Button2>
+              <Button2 className="Bt" onClick={() => {navigate("/ypayment")}}>{t.button}</Button2>
             </div>
           </div>
         ))}

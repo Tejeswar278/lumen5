@@ -1,0 +1,55 @@
+
+{
+  "ypayment": [
+        {
+          "price": "$149",
+          "id":"1"
+        }
+  ],
+  "prices": [
+    {
+      "title": "Community",
+      "desc": "For casual video enthusiasts",
+      "price": "$0",
+      "usd": "USD",
+      "pdesc": "forever free",
+      "save": "",
+      "button": "Get started"
+    },
+    {
+      "title": "Creator",
+      "desc": "For individual content creators",
+      "price": "$11",
+      "usd": "USD",
+      "pdesc": "per month, billed yearly",
+      "save": "Save 27%",
+      "button": "Get started"
+    },
+    {
+      "title": "Premium",
+      "desc": "For professional video storytellers",
+      "price": "$59",
+      "usd": "USD",
+      "pdesc": "per month, billed yearly",
+      "save": "Save 25%",
+      "button": "Get started"
+    },
+    {
+      "title": "Business",
+      "desc": "For brands focused on reach and growth",
+      "price": "$149",
+      "usd": "USD",
+      "pdesc": "per month, billed yearly",
+      "save": "Save 25%",
+      "button": "Get started"
+    },
+    {
+      "title": "Enterprise",
+      "desc": "For large-scale video teams",
+      "price": "Custom",
+      "pdesc": "  ",
+      "save": "",
+      "button": "Learn more"
+    }
+  ]
+}

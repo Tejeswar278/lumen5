@@ -1,14 +1,32 @@
-.contener {
-    margin-top: 200px;
+.container {
+    margin: auto   ;
+    border: 1px solid red;
 }
 
-h3 {
-    text-decoration: underline;
-    cursor: pointer;
+.tycl {
+    color: gray;
+}
+
+.tyimg {
+    width: 400px;
+    height: 400px;
+}
+
+.tybtn {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 28px;
     color: blue;
 }
 
-img {
-    width: "200px";
-    height: "200px";
+.tybtn:hover{ 
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.h1siva {
+    color: green;
+    text-decoration: none;
 }
