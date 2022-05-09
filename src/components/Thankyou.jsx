@@ -6,8 +6,7 @@ export default function Thankyou() {
     <div id="container">
       <center>
         <img
-          width="200px"
-          height="200px"
+         
           src="https://w7.pngwing.com/pngs/264/251/png-transparent-check-mark-checkbox-computer-icons-resort-green-tick-icon-check-illustration-miscellaneous-angle-leaf.png"
           alt=""
         />
