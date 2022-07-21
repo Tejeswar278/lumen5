@@ -59,9 +59,9 @@ function NavbarLandingpage() {
             </div>
             <FaAngleDown className="downarr" />
           </div>
-          <div className="sibtn">
+          <div className="subtn">
             <button className="signinbtn">
-              <Link className="silink" to="/signin">
+              <Link className="sulink" to="/signin">
                 Login
               </Link>
             </button>
