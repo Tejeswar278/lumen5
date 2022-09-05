@@ -10,6 +10,56 @@ import Copyright from "./Copyright";
 
 
 export default function Home(){
+    const [btn1, setBtn1] = useState(true)
+    const [btn2, setBtn2] = useState(false)
+    const [btn3, setBtn3] = useState(false)
+    const [btn4, setBtn4] = useState(false)
+    const [btn5, setBtn5] = useState(false)
+
+    const handleChange1 = () => {
+        setVidChabge(contentmarketvideos)
+        setBtn1(true)
+        setBtn2(false)
+        setBtn3(false)
+        setBtn4(false)
+        setBtn5(false)
+    }
+
+    const handleChange2 = () => {
+        setVidChabge(communicationsvideos)
+        setBtn1(false)
+        setBtn2(true)
+        setBtn3(false)
+        setBtn4(false)
+        setBtn5(false)
+    }
+
+    const handleChange3 = () => {
+        setVidChabge(promotionalvideos)
+        setBtn1(false)
+        setBtn2(false)
+        setBtn3(true)
+        setBtn4(false)
+        setBtn5(false)
+    }
+
+    const handleChange4 = () => {
+        setVidChabge(peopleAndculturevideos)
+        setBtn1(false)
+        setBtn2(false)
+        setBtn3(false)
+        setBtn4(true)
+        setBtn5(false)
+    }
+
+    const handleChange5 = () => {
+        setVidChabge(localizationvideos)
+        setBtn1(false)
+        setBtn2(false)
+        setBtn3(false)
+        setBtn4(false)
+        setBtn5(true)
+    }
     // VIDEO COMPONENT FOR RE-RENDERING
     const Video = ({url}) => {
         return (
@@ -276,11 +326,37 @@ export default function Home(){
             <section className="section7">
                 <h1 className="text-c sec7-1">Explore videos make with Lumen5</h1>
                 <div className="sec8-btns d-flex">
-                    <button id="contentmarket" value="contentmarketing" onClick={() => {setVidChabge(contentmarketvideos)}}>ContentMarketing</button>
-                    <button id="communicate" value="communication" onClick={() => {setVidChabge(communicationsvideos)}}>Communications</button>
-                    <button id="promotion" value="promotional" onClick={() => {setVidChabge(promotionalvideos)}}>Promotional</button>
-                    <button id="people" value="people" onClick={() => {setVidChabge(peopleAndculturevideos)}}>People&Culture</button>
-                    <button id="local" value="localization" onClick={() => {setVidChabge(localizationvideos)}}>Localization</button>
+                    <button id="contentmarket" value="contentmarketing" 
+                        style={{
+                            color : btn1 ? "white" : "blue",
+                            backgroundColor : btn1 ? "blue" : "white",
+                        }}
+                        onClick={handleChange1}
+                        >ContentMarketing</button>
+                    <button id="communicate" value="communication" 
+                    style={{
+                            color : btn2 ? "white" : "blue",
+                            backgroundColor : btn2 ? "blue" : "white",
+                        }} 
+                    onClick={handleChange2}>Communications</button>
+                    <button id="promotion" value="promotional"
+                    style={{
+                        color : btn3 ? "white" : "blue",
+                        backgroundColor : btn3 ? "blue" : "white",
+                    }} 
+                    onClick={handleChange3}>Promotional</button>
+                    <button id="people" value="people" 
+                    style={{
+                        color : btn4 ? "white" : "blue",
+                        backgroundColor : btn4 ? "blue" : "white",
+                    }} 
+                    onClick={handleChange4}>People&Culture</button>
+                    <button id="local" value="localization" 
+                    style={{
+                        color : btn5 ? "white" : "blue",
+                        backgroundColor : btn5 ? "blue" : "white",
+                    }} 
+                    onClick={handleChange5}>Localization</button>
                 </div>
                 <div className="sec3-vs">
                     {

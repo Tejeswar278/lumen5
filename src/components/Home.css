@@ -545,3 +545,7 @@ video:hover {
     margin-left: -80px;
     margin-right: -80px;
 }
+
+.sec8-btns>button:hover {
+    cursor: pointer;
+}
