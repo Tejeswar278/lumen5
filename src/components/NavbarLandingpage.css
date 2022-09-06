@@ -50,6 +50,19 @@
 .sulink {
     text-decoration: none;
     color: blue;
+    border: 1px solid ;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+
+.sulink2 {
+    text-decoration: none;
+    color: white;
+    border: 1px solid ;
+    border-radius: 25px;
+    background-color: rgb(73, 73, 215);
+    padding: 10px;
 
 }
 
@@ -60,7 +73,14 @@
 
 }
 
-.signupbtn {
+.sulink2:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+
+}
+
+/* .signupbtn {
     border: 1px solid blue;
     padding: 20px;
     border-radius: 50px;
@@ -72,7 +92,7 @@
     cursor: pointer;
     background-color: blue;
     color: white;
-}
+} */
 
 
 
@@ -120,6 +140,7 @@
 
 .pricing {
     text-decoration: none;
+    color: rgb(59, 10, 10);
 }
 
 .pricing:hover {

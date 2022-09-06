@@ -6,15 +6,21 @@ import 'react-slideshow-image/dist/styles.css'
 import NavbarLandingpage from "./NavbarLandingpage"
 import Footer from "./Footer";
 import Copyright from "./Copyright";
+import styled from "styled-components"
 
 
 
 export default function Home(){
+
+    
+
     const [btn1, setBtn1] = useState(true)
     const [btn2, setBtn2] = useState(false)
     const [btn3, setBtn3] = useState(false)
     const [btn4, setBtn4] = useState(false)
     const [btn5, setBtn5] = useState(false)
+
+    
 
     const handleChange1 = () => {
         setVidChabge(contentmarketvideos)
@@ -60,6 +66,62 @@ export default function Home(){
         setBtn4(false)
         setBtn5(true)
     }
+
+    const BtnStyle1 = styled.button`
+        color : ${btn1 ? "white" : "blue"};
+        background-color : ${btn1 ? "blue" : "white"};
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : #4949D7;
+        }
+    `
+
+    const BtnStyle2 = styled.button`
+        color : ${btn2 ? "white" : "blue"};
+        background-color : ${btn2 ? "blue" : "white"};
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : #4949D7;
+        }
+    `
+
+    const BtnStyle3 = styled.button`
+        color : ${btn3 ? "white" : "blue"};
+        background-color : ${btn3 ? "blue" : "white"};
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : #4949D7;
+        }
+    `
+
+    const BtnStyle4 = styled.button`
+        color : ${btn4 ? "white" : "blue"};
+        background-color : ${btn4 ? "blue" : "white"};
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : #4949D7;
+        }
+    `
+
+    const BtnStyle5 = styled.button`
+        color : ${btn5 ? "white" : "blue"};
+        background-color : ${btn5 ? "blue" : "white"};
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : #4949D7;
+        }
+    `
+
     // VIDEO COMPONENT FOR RE-RENDERING
     const Video = ({url}) => {
         return (
@@ -197,13 +259,13 @@ export default function Home(){
         "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(2).mp4"
     ])
 
-    const [val, setValue] = useState("contentmarket");
+    // const [val, setValue] = useState("contentmarket");
 
-    const handleChange = (value) => {
+    // const handleChange = (value) => {
 
-        console.log(value)
-        setValue(value);
-    }
+    //     console.log(value)
+    //     setValue(value);
+    // }
 
     const [vidchange, setVidChabge] = useState(contentmarketvideos)
     
@@ -326,37 +388,57 @@ export default function Home(){
             <section className="section7">
                 <h1 className="text-c sec7-1">Explore videos make with Lumen5</h1>
                 <div className="sec8-btns d-flex">
-                    <button id="contentmarket" value="contentmarketing" 
-                        style={{
-                            color : btn1 ? "white" : "blue",
-                            backgroundColor : btn1 ? "blue" : "white",
-                        }}
+                    <BtnStyle1 
+                        id="contentmarket" 
+                        value="contentmarketing" 
+                        // style={{
+                        //     color : btn1 ? "white" : "blue",
+                        //     backgroundColor : btn1 ? "blue" : "white",
+                        // }}
                         onClick={handleChange1}
-                        >ContentMarketing</button>
-                    <button id="communicate" value="communication" 
-                    style={{
-                            color : btn2 ? "white" : "blue",
-                            backgroundColor : btn2 ? "blue" : "white",
-                        }} 
-                    onClick={handleChange2}>Communications</button>
-                    <button id="promotion" value="promotional"
-                    style={{
-                        color : btn3 ? "white" : "blue",
-                        backgroundColor : btn3 ? "blue" : "white",
-                    }} 
-                    onClick={handleChange3}>Promotional</button>
-                    <button id="people" value="people" 
-                    style={{
-                        color : btn4 ? "white" : "blue",
-                        backgroundColor : btn4 ? "blue" : "white",
-                    }} 
-                    onClick={handleChange4}>People&Culture</button>
-                    <button id="local" value="localization" 
-                    style={{
-                        color : btn5 ? "white" : "blue",
-                        backgroundColor : btn5 ? "blue" : "white",
-                    }} 
-                    onClick={handleChange5}>Localization</button>
+                        >
+                            ContentMarketing
+                    </BtnStyle1>
+                    <BtnStyle2 
+                        id="communicate" 
+                        value="communication" 
+                        // style={{
+                        //     color : btn2 ? "white" : "blue",
+                        //     backgroundColor : btn2 ? "blue" : "white",
+                        // }} 
+                        onClick={handleChange2}>
+                            Communications
+                    </BtnStyle2>
+                    <BtnStyle3 
+                        id="promotion" 
+                        value="promotional"
+                        // style={{
+                        //     color : btn3 ? "white" : "blue",
+                        //     backgroundColor : btn3 ? "blue" : "white",
+                        // }} 
+                        onClick={handleChange3}>
+                            Promotional
+                    </BtnStyle3>
+                    <BtnStyle4 
+                        id="people" 
+                        value="people" 
+                        // style={{
+                        //     color : btn4 ? "white" : "blue",
+                        //     backgroundColor : btn4 ? "blue" : "white",
+                        // }} 
+                        onClick={handleChange4}>
+                            People Culture
+                    </BtnStyle4>
+                    <BtnStyle5 
+                        id="local" 
+                        value="localization" 
+                        // style={{
+                        //     color : btn5 ? "white" : "blue",
+                        //     backgroundColor : btn5 ? "blue" : "white",
+                        // }} 
+                        onClick={handleChange5}>
+                            Localization
+                    </BtnStyle5>
                 </div>
                 <div className="sec3-vs">
                     {

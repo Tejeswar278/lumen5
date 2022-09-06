@@ -4,14 +4,6 @@ import "./NavbarLandingpage.css";
 import { FaAngleDown } from "react-icons/fa";
 
 function NavbarLandingpage() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
     <>
       <nav className="navbarLanding">
@@ -60,18 +52,18 @@ function NavbarLandingpage() {
             <FaAngleDown className="downarr" />
           </div>
           <div className="subtn">
-            <button className="signinbtn">
+            {/* <button className="signinbtn"> */}
               <Link className="sulink" to="/signin">
                 Login
               </Link>
-            </button>
+            {/* </button> */}
           </div>
           <div className="subtn">
-            <button className="signupbtn">
-              <Link className="sulink" to="/signup">
+            {/* <button className="signupbtn"> */}
+              <Link className="sulink2" to="/signup">
                 Sign up
               </Link>
-            </button>
+            {/* </button> */}
           </div>
         </div>
       </nav>

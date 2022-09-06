@@ -310,9 +310,9 @@ video:hover {
 }
 
 .sec8-btns > button {
-    background-color: white;
+    /* background-color: white; */
     border: 1px;
-    color: blue;
+    /* color: blue; */
     padding: 10px;
     border-radius: 20px;
     border: 0.5px solid blue;
@@ -320,8 +320,8 @@ video:hover {
 }
 
 .sec8-btns > button:hover {
-    background-color: blue;
-    color: white;
+    /* background-color: blue;
+    color: white; */
     padding: 10px;
     border-radius: 20px;
 }
@@ -546,6 +546,3 @@ video:hover {
     margin-right: -80px;
 }
 
-.sec8-btns>button:hover {
-    cursor: pointer;
-}
