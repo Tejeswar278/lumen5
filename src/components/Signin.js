@@ -32,7 +32,7 @@ const Signin = () => {
                 <img className="logo" src={img1} alt="" />
                 <h1>Welcome back!</h1>
                 <br></br>
-                <p>WORK EMAIL</p>
+                <p className="pwd">WORK EMAIL</p>
                 <input
                     type="email"
                     onChange={(e) => {
@@ -42,7 +42,7 @@ const Signin = () => {
                 />
                 <br></br>
                 <br></br>
-                <p>PASSWORD</p>
+                <p className="pwd">PASSWORD</p>
                 <input
                     type="password"
                     onChange={(e) => {

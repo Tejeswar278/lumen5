@@ -278,6 +278,7 @@ video:hover {
 
 .section8 {
     margin-bottom: 200px;
+    /* border: 1px solid red; */
 }
 
 .sec8-1 {
@@ -328,9 +329,9 @@ video:hover {
 
 .slide-container {
     /* border: 1px solid black; */
-    width: 65%;
+    width: 70%;
     margin: auto;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-bottom: 20px;
 }
 
@@ -393,14 +394,15 @@ video:hover {
 .box-c {
     background-color: white;
     /* border: 1px solid red; */
-    width: 46%;
+    width: 39%;
     justify-content: flex-end;
     position: relative;
     top: 15px;
     left: 460px;
     border-radius: 10px;
     height: 350px;
-    padding: 30px;
+    padding: 20px;
+    /* font-weight: bold; */
 }
 
 .p-3 {
@@ -410,6 +412,7 @@ video:hover {
 
 .p-2 {
     color: black;
+    font-weight: bold;
 }
 
 .p-2, .p-3 {
