@@ -74,7 +74,7 @@ export default function Home(){
             text-decoration : underline;
             cursor: pointer;
             color : white;
-            background-color : #4949D7;
+            background-color : ${btn1 ? "blue" : "#4949D7"};
         }
     `
 
@@ -85,7 +85,7 @@ export default function Home(){
             text-decoration : underline;
             cursor: pointer;
             color : white;
-            background-color : #4949D7;
+            background-color : ${btn2 ? "blue" : "#4949D7"};
         }
     `
 
@@ -96,7 +96,7 @@ export default function Home(){
             text-decoration : underline;
             cursor: pointer;
             color : white;
-            background-color : #4949D7;
+            background-color : ${btn3 ? "blue" : "#4949D7"};
         }
     `
 
@@ -107,7 +107,7 @@ export default function Home(){
             text-decoration : underline;
             cursor: pointer;
             color : white;
-            background-color : #4949D7;
+            background-color : ${btn4 ? "blue" : "#4949D7"};
         }
     `
 
@@ -118,7 +118,7 @@ export default function Home(){
             text-decoration : underline;
             cursor: pointer;
             color : white;
-            background-color : #4949D7;
+            background-color : ${btn5 ? "blue" : "#4949D7"};
         }
     `
 
@@ -140,6 +140,22 @@ export default function Home(){
             <img className="back-img" src={url} alt="lumen"/>
         )
     }
+
+    //BRANDS
+    const brandImg = [
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merk-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png",
+        "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png"
+    ]
+
+    const Img = brandImg.map((imag,i) => {
+        return <img key={i} src={imag} className="brandImgClass"/>
+    })
 
     //SLIDING IMAGES DATA
     const slideImages = [
@@ -289,15 +305,7 @@ export default function Home(){
             <section className="section2">
                 <div className="text-c sec2-1">Over 6 million videos created by thousands of businesses</div>
                 <div className="sec2-d2">
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" alt="sec2-img1"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png" alt="sec2-img2"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png" alt="sec2-img3"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-color.png" alt="sec2-img4"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merk-color.png" alt="sec2-img5"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png" alt="sec2-img6"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png" alt="sec2-img7"/>
-                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png" alt="sec2-img8"/>
-                    
+                    {Img}
                 </div>
             </section>
 
@@ -390,11 +398,7 @@ export default function Home(){
                 <div className="sec8-btns d-flex">
                     <BtnStyle1 
                         id="contentmarket" 
-                        value="contentmarketing" 
-                        // style={{
-                        //     color : btn1 ? "white" : "blue",
-                        //     backgroundColor : btn1 ? "blue" : "white",
-                        // }}
+                        value="contentmarketing"
                         onClick={handleChange1}
                         >
                             ContentMarketing
@@ -402,40 +406,24 @@ export default function Home(){
                     <BtnStyle2 
                         id="communicate" 
                         value="communication" 
-                        // style={{
-                        //     color : btn2 ? "white" : "blue",
-                        //     backgroundColor : btn2 ? "blue" : "white",
-                        // }} 
                         onClick={handleChange2}>
                             Communications
                     </BtnStyle2>
                     <BtnStyle3 
                         id="promotion" 
                         value="promotional"
-                        // style={{
-                        //     color : btn3 ? "white" : "blue",
-                        //     backgroundColor : btn3 ? "blue" : "white",
-                        // }} 
                         onClick={handleChange3}>
                             Promotional
                     </BtnStyle3>
                     <BtnStyle4 
                         id="people" 
                         value="people" 
-                        // style={{
-                        //     color : btn4 ? "white" : "blue",
-                        //     backgroundColor : btn4 ? "blue" : "white",
-                        // }} 
                         onClick={handleChange4}>
                             People Culture
                     </BtnStyle4>
                     <BtnStyle5 
                         id="local" 
                         value="localization" 
-                        // style={{
-                        //     color : btn5 ? "white" : "blue",
-                        //     backgroundColor : btn5 ? "blue" : "white",
-                        // }} 
                         onClick={handleChange5}>
                             Localization
                     </BtnStyle5>
@@ -529,10 +517,12 @@ export default function Home(){
                     <div><button className="lastbtn"><Link className="signupbtnlast nav-links" to="/signup">Sign up free</Link></button></div>
                 </div>
             </section>
-        <section className="section11">
-        <Footer></Footer>
-        <Copyright></Copyright>
-        </section>
+
+            {/* SECTION 11 */}
+            <section className="section11">
+            <Footer></Footer>
+            <Copyright></Copyright>
+            </section>
         </div>
        
     )

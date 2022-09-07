@@ -7,7 +7,7 @@ export default function Copyright() {
             Copyright © 2022 Lumen5
             </div>
             <div>
-                Terms of use & Privacy Policy
+                <a className="terms" href="#">Terms of use</a> {"&"} <a className="terms" href="#">Privacy Policy</a>
             </div>
         </div>
     )

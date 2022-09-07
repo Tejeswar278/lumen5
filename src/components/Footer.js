@@ -11,30 +11,36 @@ export default function Footer() {
             <div className="right-footer">
                 <div className="col1">
                     <div className="first-ele">EXPLORE</div>
-                    <div>About</div>
-                    <div>Feature</div>
-                    <div>Career</div>
-                    <div>LinkedIn</div>
-                    <div>Support</div>
-                    <div>Community group</div>
+                    <div className="second-eles">
+                        <a href="#">About</a>
+                        <a href="#">Feature</a>
+                        <a href="#">Career</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Support</a>
+                        <a href="#">Community group</a>
+                    </div>
                 </div>
                 <div className="col2">
                     <div className="first-ele">VIDEO TOOLS</div>
-                    <div>Add text to Video</div>
-                    <div>Cut Video</div>
-                    <div>Merge Video</div>
-                    <div>Compress Video</div>
-                    <div>Resize Video</div>
-                    <div>See all</div>
+                    <div className="second-eles">
+                        <a href="#">Add text to Video</a>
+                        <a href="#">Cut Video</a>
+                        <a href="#">Merge Video</a>
+                        <a href="#">Compress Video</a>
+                        <a href="#">Resize Video</a>
+                        <a href="#">See all</a>
+                    </div>
                 </div>
                 <div className="col3">
                     <div className="first-ele">VIDEO CREATORS</div>
-                    <div>Video Editor</div>
-                    <div>Photo Video Maker</div>
-                    <div>Facebook Video Maker</div>
-                    <div>Youtube Intro Maker</div>
-                    <div>Instagram Video Maker</div>
-                    <div>See all</div>
+                    <div className="second-eles">
+                        <a href="#">Video Editor</a>
+                        <a href="#">Photo Video Maker</a>
+                        <a href="#">Facebook Video Maker</a>
+                        <a href="#">Youtube Intro Maker</a>
+                        <a href="#">Instagram Video Maker</a>
+                        <a href="#">See all</a>
+                    </div>
                 </div>
                 
             </div>

@@ -5,3 +5,12 @@
     justify-content: space-between;
     padding: 20px;
 }
+
+.terms {
+    color: white;
+    text-decoration: none;
+}
+
+.terms:hover {
+    text-decoration: underline;
+}
