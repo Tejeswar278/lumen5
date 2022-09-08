@@ -7,7 +7,7 @@ import NavbarLandingpage from "./NavbarLandingpage"
 import Footer from "./Footer";
 import Copyright from "./Copyright";
 import styled from "styled-components";
-import {brandImg, slideImages,posterVid1,video1,contentmarketvideos,communicationsvideos,promotionalvideos,peopleAndculturevideos,localizationvideos} from "./Data/HomePageData";
+import {brandImg, slideImages,posterVid1,video1,contentmarketvideos,communicationsvideos,promotionalvideos,peopleAndculturevideos,localizationvideos,posterForContentMarket,posterForCommunication,posterForLocalization,posterForPeopleandculture,posterForPormotional} from "./Data/HomePageData";
 
 
 
@@ -20,51 +20,59 @@ export default function Home(){
     const [btn5, setBtn5] = useState(false)
 
     
+    // Changing the state and style 
 
-    const handleChange1 = () => {
-        setVidChabge(contentmarketvideos)
-        setBtn1(true)
-        setBtn2(false)
-        setBtn3(false)
-        setBtn4(false)
-        setBtn5(false)
+    const handleChange = (e) => {
+            console.log("hanle click worked",e.target.value)
+            if(e.target.value == "contentmarketing"){
+                setVidChabge(contentmarketvideos)
+                setPosterChange(posterForContentMarket)
+                setBtn1(true)
+                setBtn2(false)
+                setBtn3(false)
+                setBtn4(false)
+                setBtn5(false)
+            }
+            if(e.target.value == "communication"){
+                setVidChabge(communicationsvideos)
+                setPosterChange(posterForCommunication)
+                setBtn1(false)
+                setBtn2(true)
+                setBtn3(false)
+                setBtn4(false)
+                setBtn5(false)
+            }
+            if(e.target.value == "promotional"){
+                setVidChabge(promotionalvideos)
+                setPosterChange(posterForPormotional)
+                setBtn1(false)
+                setBtn2(false)
+                setBtn3(true)
+                setBtn4(false)
+                setBtn5(false)
+            }
+            if(e.target.value == "people"){
+                setVidChabge(peopleAndculturevideos)
+                setPosterChange(posterForPeopleandculture)
+                setBtn1(false)
+                setBtn2(false)
+                setBtn3(false)
+                setBtn4(true)
+                setBtn5(false)
+            }
+            if(e.target.value == "localization"){
+                setVidChabge(localizationvideos)
+                setPosterChange(posterForLocalization)
+                setBtn1(false)
+                setBtn2(false)
+                setBtn3(false)
+                setBtn4(false)
+                setBtn5(true)
+            }
     }
 
-    const handleChange2 = () => {
-        setVidChabge(communicationsvideos)
-        setBtn1(false)
-        setBtn2(true)
-        setBtn3(false)
-        setBtn4(false)
-        setBtn5(false)
-    }
 
-    const handleChange3 = () => {
-        setVidChabge(promotionalvideos)
-        setBtn1(false)
-        setBtn2(false)
-        setBtn3(true)
-        setBtn4(false)
-        setBtn5(false)
-    }
-
-    const handleChange4 = () => {
-        setVidChabge(peopleAndculturevideos)
-        setBtn1(false)
-        setBtn2(false)
-        setBtn3(false)
-        setBtn4(true)
-        setBtn5(false)
-    }
-
-    const handleChange5 = () => {
-        setVidChabge(localizationvideos)
-        setBtn1(false)
-        setBtn2(false)
-        setBtn3(false)
-        setBtn4(false)
-        setBtn5(true)
-    }
+    //Changing the style using styled components
 
     const BtnStyle1 = styled.button`
         color : ${btn1 ? "white" : "blue"};
@@ -134,23 +142,26 @@ export default function Home(){
         )
     }
 
-    // IMAGE COMPONENT FOR RE-RENDERING
+    // IMAGE COMPONENT FOR RE-RENDERING in sliding images in section 8
     const Image = ({url}) => {
         return (
             <img className="back-img" src={url} alt="lumen"/>
         )
     }
-    const Img = brandImg.map((imag,i) => {
-        return <img key={i} src={imag} className="brandImgClass"/>
-    })
     
-
+    //Changing the state of set of videos and posters
     const [vidchange, setVidChabge] = useState(contentmarketvideos)
+    const [Posterchange, setPosterChange] = useState(posterForCommunication)
+    
     
     return (
         
         <div className="containerlanding">
+
+            {/*Navbar component */}
             <NavbarLandingpage></NavbarLandingpage>
+
+
             {/* SECTION 1 */}
             <section className="section1 m-t">
                 <div className="sec1-1">
@@ -167,7 +178,14 @@ export default function Home(){
             <section className="section2">
                 <div className="text-c sec2-1">Over 6 million videos created by thousands of businesses</div>
                 <div className="sec2-d2">
-                    {Img}
+                    {brandImg.map((imag,i) => {
+                        return <img 
+                                    key={i} 
+                                    src={imag} 
+                                    className="brandImgClass"
+                                    />
+                        }
+                    )}
                 </div>
             </section>
 
@@ -176,10 +194,16 @@ export default function Home(){
                 <div className="text-c sec3-1">Captivating video templates</div>
                 <div className="text-c sec3-2">Drag and drop. No experience required.</div>
                 <div className="sec3-vs">
-                {video1.map((url,i) => {
-                        console.log(url)
-                        return <Video className="sec3-vd" url={url} poster={posterVid1[i]} key={i}></Video>    
-                    })}
+                    {video1.map((url,i) => {
+                        return <Video 
+                                    className="sec3-vd" 
+                                    url={url} 
+                                    poster={posterVid1[i]} 
+                                    key={i}>
+
+                                    </Video>    
+                        }
+                    )}
                 </div>
             </section>
 
@@ -261,32 +285,32 @@ export default function Home(){
                     <BtnStyle1 
                         id="contentmarket" 
                         value="contentmarketing"
-                        onClick={handleChange1}
+                        onClick={handleChange}
                         >
                             ContentMarketing
                         </BtnStyle1>
                     <BtnStyle2 
                         id="communicate" 
                         value="communication" 
-                        onClick={handleChange2}>
+                        onClick={handleChange}>
                             Communications
                         </BtnStyle2>
                     <BtnStyle3 
                         id="promotion" 
                         value="promotional"
-                        onClick={handleChange3}>
+                        onClick={handleChange}>
                             Promotional
                         </BtnStyle3>
                     <BtnStyle4 
                         id="people" 
                         value="people" 
-                        onClick={handleChange4}>
+                        onClick={handleChange}>
                             People Culture
                         </BtnStyle4>
                     <BtnStyle5 
                         id="local" 
                         value="localization" 
-                        onClick={handleChange5}>
+                        onClick={handleChange}>
                             Localization
                         </BtnStyle5>
                 </div>
@@ -294,7 +318,8 @@ export default function Home(){
                     {
                        
                     vidchange.map((url,i) => {
-                        return <Video url={url} key={i}></Video>    
+                        return <Video url={url} 
+                        poster={Posterchange[i]} key={i}></Video>    
                     })}
                 </div>
                
