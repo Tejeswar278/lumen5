@@ -151,9 +151,9 @@ export default function Home(){
     
     //Changing the state of set of videos and posters
     const [vidchange, setVidChabge] = useState(contentmarketvideos)
-    const [Posterchange, setPosterChange] = useState(posterForCommunication)
+    const [Posterchange, setPosterChange] = useState(posterForContentMarket)
     
-    
+
     return (
         
         <div className="containerlanding">
