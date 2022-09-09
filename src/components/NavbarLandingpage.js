@@ -4,6 +4,16 @@ import "./NavbarLandingpage.css";
 import { FaAngleDown } from "react-icons/fa";
 
 function NavbarLandingpage() {
+  window.onscroll = function(){
+    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("lumenIcon").style.width = "70%";
+        document.getElementById("lumenIcon").style.marginLeft = "40px"
+    }
+    else if(document.body.scroll) {
+      document.getElementById("lumenIcon").style.width = "100%";
+      document.getElementById("lumenIcon").style.marginLeft = "0px"
+    }
+}
   return (
     <>
 <nav className="navbarLanding">
@@ -11,6 +21,7 @@ function NavbarLandingpage() {
           <Link to="/" className="navbar-logo">
             <img
               className="lumen-l-icon"
+              id="lumenIcon"
               src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png"
               alt="lumen icon"
             />

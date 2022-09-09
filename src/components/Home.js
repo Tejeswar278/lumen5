@@ -22,6 +22,7 @@ const BtnStyle = styled.button`
     `
 
 export default function Home(){
+    
 
     const [btn, setBtn] = useState("contentmarketing")
     const btnTypes = ["contentmarketing","communication","promotional","people","localization"]
