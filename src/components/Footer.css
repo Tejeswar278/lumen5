@@ -46,6 +46,10 @@
     text-decoration: none;
 }
 
+.second-eles>a:hover {
+    color: white;
+}
+
 /* .col2>div {
     padding-bottom: 20px;
     padding-left: 80px;

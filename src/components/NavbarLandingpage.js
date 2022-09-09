@@ -6,28 +6,17 @@ import { FaAngleDown } from "react-icons/fa";
 function NavbarLandingpage() {
   return (
     <>
-      <nav className="navbarLanding">
-        <div className="nav-icon">
+<nav className="navbarLanding">
+        <div className="nav-l-icon">
           <Link to="/" className="navbar-logo">
             <img
-              className="lumen-icon"
+              className="lumen-l-icon"
               src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png"
               alt="lumen icon"
             />
           </Link>
         </div>
         <div className="landing-nav-items">
-          {/* <div><Link className='home' to="/">Home</Link></div> */}
-          {/* <div><Link className='publish' to="/publish">Publish</Link></div> */}
-          <div></div>
-          <div className="learn">
-            <div>
-              <Link className="create" to="/">
-                Create
-              </Link>
-            </div>
-            <FaAngleDown className="downarr" />
-          </div>
           <div>
             <Link className="pricing" to="/pricing">
               Pricing
@@ -52,18 +41,14 @@ function NavbarLandingpage() {
             <FaAngleDown className="downarr" />
           </div>
           <div className="subtn">
-            {/* <button className="signinbtn"> */}
               <Link className="sulink" to="/signin">
                 Login
               </Link>
-            {/* </button> */}
           </div>
           <div className="subtn">
-            {/* <button className="signupbtn"> */}
               <Link className="sulink2" to="/signup">
                 Sign up
               </Link>
-            {/* </button> */}
           </div>
         </div>
       </nav>

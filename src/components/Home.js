@@ -7,138 +7,53 @@ import NavbarLandingpage from "./NavbarLandingpage"
 import Footer from "./Footer";
 import Copyright from "./Copyright";
 import styled from "styled-components";
-import {brandImg, slideImages,posterVid1,video1,contentmarketvideos,communicationsvideos,promotionalvideos,peopleAndculturevideos,localizationvideos,posterForContentMarket,posterForCommunication,posterForLocalization,posterForPeopleandculture,posterForPormotional} from "./Data/HomePageData";
+import {PosterContent,VideoContent,brandImg, slideImages,posterVid1,video1} from "./Data/HomePageData";
 
-
+const BtnStyle = styled.button`
+        color : ${props => props.color};
+        background-color : ${props => props.backgroundColor};
+        border : 1px solid blue;
+        &:hover {
+            text-decoration : underline;
+            cursor: pointer;
+            color : white;
+            background-color : ${props => props.backgroundcolor ? "blue" : "#4949D7"};
+        }
+    `
 
 export default function Home(){
 
-    const [btn1, setBtn1] = useState(true)
-    const [btn2, setBtn2] = useState(false)
-    const [btn3, setBtn3] = useState(false)
-    const [btn4, setBtn4] = useState(false)
-    const [btn5, setBtn5] = useState(false)
-
-    
-    // Changing the state and style 
+    const [btn, setBtn] = useState("contentmarketing")
+    const btnTypes = ["contentmarketing","communication","promotional","people","localization"]
+    const [vidchange, setVidChange] = useState(VideoContent["contentmarketing"])
+    const [Posterchange, setPosterChange] = useState(PosterContent["contentmarketing"])
 
     const handleChange = (e) => {
-            console.log("hanle click worked",e.target.value)
-            if(e.target.value == "contentmarketing"){
-                setVidChabge(contentmarketvideos)
-                setPosterChange(posterForContentMarket)
-                setBtn1(true)
-                setBtn2(false)
-                setBtn3(false)
-                setBtn4(false)
-                setBtn5(false)
-            }
-            if(e.target.value == "communication"){
-                setVidChabge(communicationsvideos)
-                setPosterChange(posterForCommunication)
-                setBtn1(false)
-                setBtn2(true)
-                setBtn3(false)
-                setBtn4(false)
-                setBtn5(false)
-            }
-            if(e.target.value == "promotional"){
-                setVidChabge(promotionalvideos)
-                setPosterChange(posterForPormotional)
-                setBtn1(false)
-                setBtn2(false)
-                setBtn3(true)
-                setBtn4(false)
-                setBtn5(false)
-            }
-            if(e.target.value == "people"){
-                setVidChabge(peopleAndculturevideos)
-                setPosterChange(posterForPeopleandculture)
-                setBtn1(false)
-                setBtn2(false)
-                setBtn3(false)
-                setBtn4(true)
-                setBtn5(false)
-            }
-            if(e.target.value == "localization"){
-                setVidChabge(localizationvideos)
-                setPosterChange(posterForLocalization)
-                setBtn1(false)
-                setBtn2(false)
-                setBtn3(false)
-                setBtn4(false)
-                setBtn5(true)
-            }
+            setBtn(e.target.value)
+            setVidChange(VideoContent[e.target.value])
+            setPosterChange(PosterContent[e.target.value])
     }
-
-
-    //Changing the style using styled components
-
-    const BtnStyle1 = styled.button`
-        color : ${btn1 ? "white" : "blue"};
-        background-color : ${btn1 ? "blue" : "white"};
-        &:hover {
-            text-decoration : underline;
-            cursor: pointer;
-            color : white;
-            background-color : ${btn1 ? "blue" : "#4949D7"};
-        }
-    `
-
-    const BtnStyle2 = styled.button`
-        color : ${btn2 ? "white" : "blue"};
-        background-color : ${btn2 ? "blue" : "white"};
-        &:hover {
-            text-decoration : underline;
-            cursor: pointer;
-            color : white;
-            background-color : ${btn2 ? "blue" : "#4949D7"};
-        }
-    `
-
-    const BtnStyle3 = styled.button`
-        color : ${btn3 ? "white" : "blue"};
-        background-color : ${btn3 ? "blue" : "white"};
-        &:hover {
-            text-decoration : underline;
-            cursor: pointer;
-            color : white;
-            background-color : ${btn3 ? "blue" : "#4949D7"};
-        }
-    `
-
-    const BtnStyle4 = styled.button`
-        color : ${btn4 ? "white" : "blue"};
-        background-color : ${btn4 ? "blue" : "white"};
-        &:hover {
-            text-decoration : underline;
-            cursor: pointer;
-            color : white;
-            background-color : ${btn4 ? "blue" : "#4949D7"};
-        }
-    `
-
-    const BtnStyle5 = styled.button`
-        color : ${btn5 ? "white" : "blue"};
-        background-color : ${btn5 ? "blue" : "white"};
-        &:hover {
-            text-decoration : underline;
-            cursor: pointer;
-            color : white;
-            background-color : ${btn5 ? "blue" : "#4949D7"};
-        }
-    `
 
     // VIDEO COMPONENT FOR RE-RENDERING
     const Video = ({url,poster}) => {
         return (
+            <div className="sec7-vd">
                 <video
+                    className="videoTag"
+                    
                     src={url}
                     poster={poster}
-                    onMouseOver={event => {event.target.play()}}
-                    onMouseOut={event => event.target.pause()}
+                    onMouseOver={event =>   {
+                                                event.target.play();
+                                            }}
+                    onMouseOut={event => {event.target.pause()}}
                     muted={true}
-            />
+                />
+                {/* <div className="play-btn-div">
+                        <BsPlayFill className="play-btn"/>
+                    </div> */}
+
+                </div>
         )
     }
 
@@ -149,18 +64,13 @@ export default function Home(){
         )
     }
     
-    //Changing the state of set of videos and posters
-    const [vidchange, setVidChabge] = useState(contentmarketvideos)
-    const [Posterchange, setPosterChange] = useState(posterForContentMarket)
-    
-
     return (
         
         <div className="containerlanding">
 
             {/*Navbar component */}
             <NavbarLandingpage></NavbarLandingpage>
-
+            
 
             {/* SECTION 1 */}
             <section className="section1 m-t">
@@ -183,6 +93,7 @@ export default function Home(){
                                     key={i} 
                                     src={imag} 
                                     className="brandImgClass"
+                                    alt="brand"
                                     />
                         }
                     )}
@@ -213,10 +124,10 @@ export default function Home(){
                     <img className="sec4-img" src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png" alt="sec4-img"/>
                 </div>
                 <div className="sec4-2">
-                    <div className="file-i"><i class="fa-solid fa-file-lines file-icon"></i></div>
+                    <div className="file-i"><i className="fa-solid fa-file-lines file-icon"></i></div>
                     <div className="sec4-2-2">Transform blog posts <br/>into videos with A.I.</div>
                     <div className="sec4-2-3">Starting from a blank page is hard — and <br/>with Lumen5, you don’t have to. Our AI-<br/>powered technology helps you storyboard <br/>your ideas, fit your content to a layout, and <br/>find music and visuals that enhance your <br/>message.</div>
-                    <div className="sec4-2-4"><Link to="/signup" className='nav-links'>Get started for free <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
+                    <div className="sec4-2-4"><Link to="/signup" className='nav-links'>Get started for free <i className="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
                     <div className="sec4-2-5">“Lumen5 has enabled us to create more videos <br/>and drive more traffic, while having more time to <br/>invest in other projects.”</div>
                     <div className="width d-flex">
                         <div className="s4-rh-ld  ">
@@ -237,7 +148,7 @@ export default function Home(){
                     <div className="file-i" ><i className="fa-solid fa-image file-icon"></i></div>
                     <div className="sec4-2-2">Content library with <br/>millions of stock <br/>photos & videos</div>
                     <div className="sec5-1-3">The Lumen5 media library gives you <br/>easy access to millions of photos,<br/>video clips, and audio files, so you <br/>always have the elements you need<br/>to create the perfect video.</div>
-                    <div className="sec5-1-4"><Link to="/signUp" className='nav-links'>View plans <i class="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
+                    <div className="sec5-1-4"><Link to="/pricing" className='nav-links'>View plans <i className="fa-solid fa-arrow-right-long"></i></Link></div><hr className="hline"/>
                     <div className="sec5-1-5">“We promoted our downloadable study <br/>on top PPC skills for 2019 on social media <br/>using a short video created in Lumen5 in<br/>just 30 minutes, and decreased cost per<br/>download by 5x!”</div>
                     <div className="width d-flex">
                         <div className="s4-rh-ld">
@@ -281,45 +192,26 @@ export default function Home(){
             {/* SECTION 7 */}
             <section className="section7">
                 <h1 className="text-c sec7-1">Explore videos make with Lumen5</h1>
-                <div className="sec8-btns d-flex">
-                    <BtnStyle1 
-                        id="contentmarket" 
-                        value="contentmarketing"
-                        onClick={handleChange}
-                        >
-                            ContentMarketing
-                        </BtnStyle1>
-                    <BtnStyle2 
-                        id="communicate" 
-                        value="communication" 
-                        onClick={handleChange}>
-                            Communications
-                        </BtnStyle2>
-                    <BtnStyle3 
-                        id="promotion" 
-                        value="promotional"
-                        onClick={handleChange}>
-                            Promotional
-                        </BtnStyle3>
-                    <BtnStyle4 
-                        id="people" 
-                        value="people" 
-                        onClick={handleChange}>
-                            People Culture
-                        </BtnStyle4>
-                    <BtnStyle5 
-                        id="local" 
-                        value="localization" 
-                        onClick={handleChange}>
-                            Localization
-                        </BtnStyle5>
+                <div className="sec7-btns d-flex">
+                    {btnTypes.map((val,i) => {
+                        return(
+                            <BtnStyle onClick={handleChange} key={i} value={val} color={btn === val ? 'white' : 'blue'} backgroundColor={btn === val ? 'blue' : 'white  '}>
+                                {val}
+                            </BtnStyle>
+                        )    
+                        })
+                    }
+                    
                 </div>
                 <div className="sec3-vs">
                     {
                        
                     vidchange.map((url,i) => {
+                        // console.log("url:",vidchange)
                         return <Video url={url} 
-                        poster={Posterchange[i]} key={i}></Video>    
+                                    poster={Posterchange[i]} 
+                                    key={i}>
+                                </Video>    
                     })}
                 </div>
                
@@ -341,7 +233,7 @@ export default function Home(){
                                             <p className="p-1">{slideImage.description}</p>
                                             <p className="p-2">{slideImage.name}</p>
                                             <p className="p-3">{slideImage.title}</p>
-                                            <p className="lastp"><Link to="/signUp" className="nav-linkss">Read story </Link><i class="fa-solid fa-arrow-right-long"></i></p>
+                                            <p className="lastp"><Link to="/signUp" className="nav-linkss">Read story </Link><i className="fa-solid fa-arrow-right-long"></i></p>
                                         </div>
                                         </span>
                                     
@@ -365,6 +257,7 @@ export default function Home(){
                 <div className="heading9 text-c">
                 Tips and tricks for amplifying<br/>your brand with video
                 </div>
+
                 <div className="cards d-flex width">
                     
                     <div className="innercard d-flex w-50">
@@ -372,20 +265,20 @@ export default function Home(){
                             <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb1 ">Video Marketing: <br/>How to Get Started <br/>[Step by Step]</div>
-                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div className="text-r link">Read Story <i className="fa-solid fa-arrow-right-long"></i></div>
                             
                         </div>
-                        <div className="card2 borderlite w-30">
+                        <div className="card1 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb2">How to Increase <br/>Your Facebook <br/>Video Views <br/>[Complete Guide]</div>
-                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div className="text-r link">Read Story <i className="fa-solid fa-arrow-right-long"></i></div>
                         </div>
-                        <div className="card3 borderlite w-30">
+                        <div className="card1 borderlite w-30">
                         <img className="card-imgs" src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="card"/>
                             <div className="text-b p-l m-b">BLOG</div>
                             <div className="text-l p-l mb3">The Importance of <br/>Video in Your <br/>Content Strategy</div>
-                            <div className="text-r link">Read Story <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div className="text-r link">Read Story <i className="fa-solid fa-arrow-right-long"></i></div>
                         </div>
                     </div>
                 </div>
@@ -393,7 +286,7 @@ export default function Home(){
 
             {/* SECTION 10 */}
             <section className="section10 width">
-                <div >
+                <div className="sec10">
                     <div className="sec10-0"></div>
                     <div className="sec10-1">
                     Join 800,000+ companies that are <br/>using Lumen5 to tell their stories.
@@ -401,7 +294,13 @@ export default function Home(){
                     <div className="sec10-2">
                     Lumen5 is a video creation software that helps marketers, <br/>publishers, and brands create video content in a breeze, <br/>without any technical expertise.
                     </div>
-                    <div><button className="lastbtn"><Link className="signupbtnlast nav-links" to="/signup">Sign up free</Link></button></div>
+                    <div className="sec10-btn">
+                            <Link 
+                                className="lastbtn" 
+                                to="/signup">
+                                    Sign up free
+                                </Link>
+                        </div>
                 </div>
             </section>
 

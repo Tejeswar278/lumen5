@@ -158,16 +158,17 @@ video:hover {
     margin-bottom: 20px;
 }
 
-.sec3-vs {
+.sec3-vs  {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-row-gap: 45px;
     grid-column-gap: 30px;
     width: 80%;
     margin: auto;
+    /* border: 1px solid red; */
 }
 
-.sec3-vs > video {
+.sec3-vs > div > video {
     width: 100%;
     border-radius: 20px;
 }
@@ -303,35 +304,24 @@ video:hover {
     margin: auto;
 }
 
-.sec8-btns {
+.sec7-btns {
     justify-content: space-around;
     width: 85%;
     margin: auto;
     margin-bottom: 50px;
+    /* border: 1px solid black; */
 }
 
-.sec8-btns > button {
-    /* background-color: white; */
+ .sec7-btns > button {
     border: 1px;
-    /* color: blue; */
     padding: 10px;
     border-radius: 20px;
     border: 0.5px solid blue;
-    margin-right: 20px;
+    width: 13%;
 }
-
-.sec8-btns > button:hover {
-    /* background-color: blue;
-    color: white; */
-    padding: 10px;
-    border-radius: 20px;
-}
-
 .slide-container {
-    /* border: 1px solid black; */
     width: 70%;
     margin: auto;
-    /* border-radius: 20px; */
     margin-bottom: 20px;
 }
 
@@ -340,7 +330,6 @@ video:hover {
 }
 
 .each-slide {
-    /* border: 1px solid red; */
     width: auto;
     background-size: auto;
     border-radius: 20px;
@@ -381,7 +370,6 @@ video:hover {
 }
 
 .sec8-2 {
-    /* border: 1px solid black; */
     width: 70%;
     margin: auto;
     margin-bottom: 60px;
@@ -393,7 +381,6 @@ video:hover {
 
 .box-c {
     background-color: white;
-    /* border: 1px solid red; */
     width: 39%;
     justify-content: flex-end;
     position: relative;
@@ -402,7 +389,6 @@ video:hover {
     border-radius: 10px;
     height: 350px;
     padding: 20px;
-    /* font-weight: bold; */
 }
 
 .p-3 {
@@ -445,7 +431,11 @@ video:hover {
 
 .innercard {
     justify-content: space-around;
-    height: 400px;
+}
+
+.card1 {
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
 
 .w-30 {
@@ -459,11 +449,13 @@ video:hover {
 .card-imgs {
     width: 100%;
     margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .text-l {
     text-align: left;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .mb1 {
@@ -510,11 +502,15 @@ video:hover {
     width: 80%;
     margin: auto;
     border-radius: 20px;
-    background-color: blue;
+    background-color: rgb(73, 73, 215);
     color: white;
     text-align: center;
     margin-bottom: 100px;
     padding-top: 10px;
+}
+
+.sec10 {
+    padding: 10px;
 }
 
 .sec10-1 {
@@ -528,24 +524,53 @@ video:hover {
 }
 
 .sec10-2 {
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.sec10-btn {
+    margin-bottom: 50px;
 }
 
 .lastbtn {
+    background-color: white;
+    color: blue;
     padding: 18px;
     border-radius: 25px;
-    border: 0;
-    margin-bottom: 60px;
+    text-decoration: none;
+    position: relative;
+
 }
 
 .lastbtn:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: rgb(235, 230, 230);
+    text-decoration: underline;
+    color: rgb(59, 59, 240);
 }
 
-/* .section11 {
-    margin-left: -80px;
-    margin-right: -80px;
-} */
+.play-btn {
+    width: 50px;
+    height: 50px;
+    color: rgb(160, 157, 157);
+    border-radius: 25px;
+    z-index: -100;
+
+}
+
+.play-btn-div {
+    position: relative;
+    top: 10;
+    margin-top: -100px;
+    left: 0;
+
+}
+
+.play-btn {
+    top: 10;
+}
+
+.sec7-vd {
+ z-index: 0;
+}
 

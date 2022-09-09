@@ -92,141 +92,90 @@ export const video1 = [
     "https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4"
 ];
 
-export const contentmarketvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"
-];
+export const VideoContent = {
+    contentmarketing : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"
+    ],
+    communication : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Coral%20Reef%20Protection.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Zespri%20Selects%20SAP.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Textile%20Recycling.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Navigating%20the%20Seas.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Outstanding%20Researchers.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Fighting%20COVID-19.mp4"
+    ],
+    promotional : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Global%20Leader%20(1).mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Remote%20Auditing.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Turbocompressor.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Innovation%20Awards.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Dormakaba%20(1).mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/V%20Plate.mp4"
+    ],
+    people : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Volunteers%20Week.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Create%20Your%20Future.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/siemens-culture.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Voice%20of%20Sulzer.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Fundraising%20Challenge.mp4"
+    ],
+    localization : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(1).mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/siemens-local.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Agility.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Siemens%20Energy.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/DNV%20GL.mp4",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(2).mp4"
+    ],
 
-export const communicationsvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Coral%20Reef%20Protection.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Zespri%20Selects%20SAP.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Textile%20Recycling.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Navigating%20the%20Seas.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Outstanding%20Researchers.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Fighting%20COVID-19.mp4"
-];
+}
 
-export const promotionalvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Global%20Leader%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Remote%20Auditing.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Turbocompressor.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Innovation%20Awards.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Dormakaba%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/V%20Plate.mp4"
-];
-
-export const peopleAndculturevideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Volunteers%20Week.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Create%20Your%20Future.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/siemens-culture.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Voice%20of%20Sulzer.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Fundraising%20Challenge.mp4"
-];
-
-export const localizationvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/siemens-local.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Agility.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Siemens%20Energy.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/DNV%20GL.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(2).mp4"
-];
-
-export const posterForContentMarket = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content-TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience%20TN.png"
-];
-
-export const posterForCommunication = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Coral%20Reef%20Protection%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Zespri%20Selects%20SAP%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Textile%20Recycling%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Navigating%20the%20Seas%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Outstanding%20Researchers.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Fighting%20COVID-19%20TN.png"
-];
-
-export const posterForPormotional = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Global%20Leader%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Remote%20Auditing%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Turbocompressor%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Innovation%20Awards%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Dormakaba%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/V%20Plate%20TN.png"
-];
-
-export const posterForPeopleandculture = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Volunteers%20Week%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Create%20Your%20Future%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/siemens-culture-TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Voice%20of%20Sulzer%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Fundraising%20Challenge%20TN.png"
-];
-
-export const posterForLocalization = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%201%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/siemens-local-TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Agility%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Siemens%20Energy%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/DNV%20GL%20TN.png",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%202%20TN.png"
-]
-
-
-export const Contentmarketvideos = [
-    {
-        video:"https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4",
-        poster : "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy%20TN.png"
-    },
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"
-];
-
-export const Communicationsvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Coral%20Reef%20Protection.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Zespri%20Selects%20SAP.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Textile%20Recycling.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Navigating%20the%20Seas.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Outstanding%20Researchers.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Fighting%20COVID-19.mp4"
-];
-
-export const Promotionalvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Global%20Leader%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Remote%20Auditing.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Turbocompressor.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Innovation%20Awards.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Dormakaba%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/V%20Plate.mp4"
-];
-
-export const PeopleAndculturevideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Create%20Your%20Future.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/siemens-culture.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Voice%20of%20Sulzer.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Fundraising%20Challenge.mp4"
-];
-
-export const Localizationvideos = [
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(1).mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/siemens-local.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Agility.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Siemens%20Energy.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/DNV%20GL.mp4",
-    "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%20(2).mp4"
-];
+export const PosterContent = {
+    contentmarketing : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content-TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience%20TN.png"
+    ],
+    communication : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Coral%20Reef%20Protection%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Zespri%20Selects%20SAP%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Textile%20Recycling%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Navigating%20the%20Seas%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Outstanding%20Researchers.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Communications/Fighting%20COVID-19%20TN.png"
+    ],
+    promotional : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Global%20Leader%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Remote%20Auditing%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Turbocompressor%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Innovation%20Awards%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/Dormakaba%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Promotional/V%20Plate%20TN.png"
+    ],
+    
+    people : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Women%20in%20Tech%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Volunteers%20Week%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Create%20Your%20Future%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/siemens-culture-TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Voice%20of%20Sulzer%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/People%20_%20Culture/Fundraising%20Challenge%20TN.png"
+    ],
+    localization : [
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%201%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/siemens-local-TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Agility%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Siemens%20Energy%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/DNV%20GL%20TN.png",
+        "https://storage.googleapis.com/lumen5-site-images/homepage/Localization/Colliers%202%20TN.png"
+    ]
+}
