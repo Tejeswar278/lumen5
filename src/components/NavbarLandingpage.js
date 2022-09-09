@@ -7,7 +7,7 @@ function NavbarLandingpage() {
   window.onscroll = function(){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("lumenIcon").style.width = "70%";
-        document.getElementById("lumenIcon").style.marginLeft = "40px"
+        document.getElementById("lumenIcon").style.marginLeft = "30px"
     }
     else if(document.body.scroll) {
       document.getElementById("lumenIcon").style.width = "100%";
@@ -16,7 +16,7 @@ function NavbarLandingpage() {
 }
   return (
     <>
-<nav className="navbarLanding">
+      <nav className="navbarLanding">
         <div className="nav-l-icon">
           <Link to="/" className="navbar-logo">
             <img
